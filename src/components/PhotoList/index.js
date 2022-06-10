@@ -38,6 +38,12 @@ const PhotoList = ({ category }) => {
             category: 'portfolio',
             description:
                 'New Project Coming Soon!'
+        },
+        {
+            name: 'Full Stack Developer Resume',
+            category: 'resume',
+            description:
+                'Professional Resume 2022'
         }
     ]);
 
