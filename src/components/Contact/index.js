@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
+import { validateEmail } from '../../utils/helpers';
 
-import { validateEmail } from '../PhotoList/utils/helpers';
-
-function ContactForm() {
+function Contact() {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
   const [errorMessage, setErrorMessage] = useState('');
@@ -63,4 +62,4 @@ function ContactForm() {
   );
 }
 
-export default ContactForm;
+export default Contact;
