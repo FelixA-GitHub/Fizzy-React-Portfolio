@@ -32,7 +32,7 @@ function Resume() {
     //         }
     //     }
     //     if (!errorMessage) {
-    //         setFormState({ ...resumeState, [e.target.link]: e.target.value });
+    //         setResumeState({ ...resumeState, [e.target.link]: e.target.value });
     //         console.log('Handle Resume', resumeState);
     //     }
     // };
