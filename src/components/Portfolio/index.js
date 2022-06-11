@@ -1,9 +1,14 @@
-import React from 'react';
-// import PhotoList from '../PhotoList';
-// import { capitalizeFirstLetter } from '../PhotoList/utils/helpers';
-import portfolioImage from '../../assets/small/portfolio/0.jpg'
+import React, { useState } from 'react';
+import Project from '../Project';
 
 function Portfolio() {
+
+    const [projects] = useState([
+        {
+
+        }
+    ])
+    
     return (
         <section className='my-5'>
            <div onClick="">
