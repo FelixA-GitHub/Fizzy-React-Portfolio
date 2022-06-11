@@ -5,16 +5,16 @@ function Footer() {
     //social media icons and corresponding links
     const icons = [
         {
-            name: "",
-            link: ""
+            name: "fab fa-github",
+            link: "https://github.com/FelixA-GitHub"
         },
         {
-            name: "",
-            link: ""
+            name: "fab fa-linkedIn",
+            link: "https://www.linkedin.com/in/felix-acevedo-b7596520a/"
         },
         {
-            name: "",
-            link: ""
+            name: "fab fa-stack-overflow",
+            link: "https://stackoverflow.com/users/17420314/felix"
         }
 
     ]
@@ -24,7 +24,7 @@ function Footer() {
             {icons.map(icon =>
                 (
                     <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer">
-                        <i className={icon.name}></i>
+                        <i className={icon.name} fa-bounce></i>
                     </a>
                 )
             )}
