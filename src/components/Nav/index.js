@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { capitalizeFirstLetter } from '../PhotoList/utils/helpers';
+import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
   const {
@@ -14,9 +14,23 @@ function Nav(props) {
 
   return (
 
-      <nav>
-        
-      </nav>
+    <nav className=''>
+      <ul className='flex-row'>
+        {pages.map((Page) => (
+          <li
+            className={`mx-5 ${currentPage.name === Page.name && 'navActive'
+              }`}
+            key={Page.name}
+          >
+            <span
+              onClick={() => setCurrentPage(Page)}
+            >
+              {capitalizeFirstLetter(Page.name)}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </nav>
 
   );
 }
