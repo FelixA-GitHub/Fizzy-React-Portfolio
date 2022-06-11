@@ -16,10 +16,23 @@ function Resume() {
                     <div className=''>
                         <h1 className=''>{capitalizeFirstLetter(currentPage.name)}</h1>
                         <hr />
-                        <h3>Skils</h3>
+                        <h3>Front-End and Back-End Proficiencies</h3>
                             <ul>
-                                <li></li>
-                                HTML, CSS, JavaScript, Web APIs, Third-Party APIs, Server-Side APIs, Node.js, Object Oriented Programming, Express.js, SQL, NoSQL, Model-View-Controllers, Object-Relational Mapping, Progressive Web Applications, and React
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>Web APIs</li>
+                                <li>Third-Party APIs</li>
+                                <li>Server-Side APIs</li>
+                                <li>Node.js</li>
+                                <li>Object Oriented Programming</li>
+                                <li>Express.js</li>
+                                <li>SQL</li>
+                                <li>NoSQL</li>
+                                <li>Model-View-Controllers</li>
+                                <li>Object-Relational Mapping</li>
+                                <li>Progressive Web Applications</li>
+                                <li>React</li>
                             </ul>
                     </div>
 
