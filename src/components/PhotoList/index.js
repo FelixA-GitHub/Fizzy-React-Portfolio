@@ -13,7 +13,7 @@ const PhotoList = ({ category }) => {
         },
         {
             name: 'RegalCare, Inc',
-            category: 'portfoliio',
+            category: 'portfolio',
             description: 'A website dedicated to traveling medical professional whereby they can search and apply for short-term assignments in different cities. Employers can post, edit, and delete jobs as well.'
         },
         {
