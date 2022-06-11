@@ -1,14 +1,13 @@
 import React, { useState } from "react";
+import Header from './components/Header';
 import Nav from './components/Nav';
-import About from './components/About';
-import Gallery from './components/Gallery';
-import Contact from './components/Contact';
-import Resume from './components/Resume';
-import Portfolio from "./components/Portfolio";
+import Page from './components/Page';
+import Footer from './components/Footer';
+
 
 
 function App() {
-  const [categories] = useState([
+  const [pages] = useState([
     {
       name: 'about',
       description: 'I am a Full Stack Web Developer leveraging a Physical Therapy background to build intuitive and responsive web experiences for all users.'
@@ -18,31 +17,24 @@ function App() {
     { name: 'resume', description: 'Downloadable resume and list of proficiencies. References available upon request' }
   ]);
 
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  const [currentPage, setCurrentPage] = useState(pages[0]);
 
-  const [contactSelected, setContactSelected] = useState(false);
+  // const [contactSelected, setContactSelected] = useState(false);
 
   return (
     <div>
-      <Nav
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      ></Nav>
+      <Header>
+        <Nav
+        pages={pages}
+        setCurrentPage={setCurrentPage}
+        currentPage={currentPage}
+        >
+        </Nav>
+      </Header>
       <main>
-        {!contactSelected ? (
-          <>
-            <Gallery currentCategory={currentCategory}></Gallery>
-            <About></About>
-            <Portfolio></Portfolio>
-            <Resume></Resume>
-          </>
-        ) : (
-          <Contact></Contact>
-        )}
+        <Page currentPage={currentPage}></Page>
       </main>
+      <Footer />
     </div>
   );
 }
