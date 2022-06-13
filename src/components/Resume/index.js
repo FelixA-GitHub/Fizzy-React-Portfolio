@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
 import resume from '../../assets/resume/FullStackDeveloperResume.pdf';
-import { capitalizeFirstLetter } from '../../utils/helpers';
+// import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Resume() {
-    const [pages] = useState([
-        {
-            name: "resume"
-        }
-    ]);
-    const [currentPage] = useState(pages[0]);
+    // const [pages] = useState([
+    //     {
+    //         name: "resume"
+    //     }
+    // ]);
+    // const [currentPage] = useState(pages[0]);
     return (
         <section className=''>
             <div className='container'>
                 <div className='row'>
                     <div className=''>
-                        <h1 className=''>{capitalizeFirstLetter(currentPage.name)}</h1>
+                        <h1 className=''></h1>
                         <hr />
                         <h3>Front-End and Back-End Proficiencies</h3>
                         <ul>

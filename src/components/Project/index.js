@@ -1,5 +1,5 @@
 import React from "react";
-import { removeHyphensAndCapitalize } from "../../utils/helpers";
+import { removeHyphens, capitalizeFirstLetter } from "../../utils/helpers";
 
 function Project({project}) {
     const { name, description, link, repo } = project;
@@ -8,13 +8,13 @@ function Project({project}) {
         <div className="project" key={name}>
             <img
                 src={require(`../../assets/projects/${name}.jpg`)}
-                alt={removeHyphensAndCapitalize(name)}
+                alt={removeHyphens(name) && capitalizeFirstLetter(name)}
                 className="project-bg"
             />
             <div className="project-text">
                 <p>{description}</p>
                 <h3>
-                    <a href={link}>{removeHyphensAndCapitalize(name)}</a>{' '}
+                    <a href={link}>{removeHyphens(name) && capitalizeFirstLetter(name)}</a>{' '}
                     <a href={repo}>
                         <i className="fab fa-github"></i>
                     </a>

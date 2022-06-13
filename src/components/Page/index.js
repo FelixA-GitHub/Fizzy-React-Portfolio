@@ -10,7 +10,7 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 function Page({ currentPage }) {
 
     const renderPage = () => {
-        switch (currentPage) {
+        switch (currentPage.name) {
             case 'about me':
                 return <About />;
             case 'portfolio':
