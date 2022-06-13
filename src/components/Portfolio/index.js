@@ -42,22 +42,20 @@ function Portfolio() {
             repo: 'https://github.com/FelixA-GitHub'
         },
     ])
-    
+
     return (
-        <section className='my-5'>
-           <div onClick="">
-                <div >
-                    <h3>Data Mammoth</h3>
-                    <img src={portfolioImage} width="300" height="200" alt="Data Mammoth Screenshot"/>
-                    <h5>JavaScript/HTML</h5>
-                </div>
-                
-                <div >
-                </div>
-                
-            </div> 
-        </section>
-    )
+        <div>
+            <div className='flex-row'>
+                {projects.map((project, i) => (
+                    <Project
+                        project={project}
+                        key={"project" + i}
+                    />
+                ))}
+            </div>
+
+        </div>
+    );
 };
 
 export default Portfolio;
