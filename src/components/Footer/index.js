@@ -20,15 +20,17 @@ function Footer() {
     ]
 
     return (
-        <footer className="">
-            {icons.map(icon =>
+        <section>
+            <footer className="">
+                {icons.map(icon =>
                 (
                     <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer">
                         <i className={icon.name} fa-bounce></i>
                     </a>
                 )
-            )}
-        </footer>
+                )}
+            </footer>
+        </section>
     );
 };
 
