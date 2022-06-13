@@ -6,40 +6,40 @@ function Portfolio() {
 
     const [projects] = useState([
         {
-            name: '',
-            description: '',
-            link: '',
-            repo: ''
+            name: 'run-buddy',
+            description: 'HTML/CSS',
+            link: 'https://felixa-github.github.io/run-buddy/',
+            repo: 'https://github.com/FelixA-GitHub/run-buddy.git'
         },
         {
-            name: '',
-            description: '',
-            link: '',
-            repo: ''
+            name: 'data-mammoth',
+            description: 'JavaScript/HTML',
+            link: 'https://felixa-github.github.io/Data-Mammoth/',
+            repo: 'https://github.com/FelixA-GitHub/Data-Mammoth.git'
         },
         {
-            name: '',
-            description: '',
-            link: '',
-            repo: ''
+            name: 'regalcare',
+            description: 'JavaScript/Handlebars/MySQL',
+            link: 'https://github.com/FelixA-GitHub/grasshopper-travel.git',
+            repo: 'https://github.com/FelixA-GitHub/grasshopper-travel.git'
         },
         {
-            name: '',
-            description: '',
-            link: '',
-            repo: ''
+            name: 'construction1',
+            description: 'TBD',
+            link: 'https://github.com/FelixA-GitHub',
+            repo: 'https://github.com/FelixA-GitHub'
         },
         {
-            name: '',
-            description: '',
-            link: '',
-            repo: ''
+            name: 'construction2',
+            description: 'TBD',
+            link: 'https://github.com/FelixA-GitHub',
+            repo: 'https://github.com/FelixA-GitHub'
         },
         {
-            name: '',
-            description: '',
-            link: '',
-            repo: ''
+            name: 'construction3',
+            description: 'TBD',
+            link: 'https://github.com/FelixA-GitHub',
+            repo: 'https://github.com/FelixA-GitHub'
         },
     ])
     
