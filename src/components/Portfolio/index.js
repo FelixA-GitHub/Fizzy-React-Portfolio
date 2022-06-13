@@ -1,12 +1,46 @@
 import React, { useState } from 'react';
 import Project from '../Project';
 
+//Portfolio function holds all the Projects to be presented to the viewer
 function Portfolio() {
 
     const [projects] = useState([
         {
-
-        }
+            name: '',
+            description: '',
+            link: '',
+            repo: ''
+        },
+        {
+            name: '',
+            description: '',
+            link: '',
+            repo: ''
+        },
+        {
+            name: '',
+            description: '',
+            link: '',
+            repo: ''
+        },
+        {
+            name: '',
+            description: '',
+            link: '',
+            repo: ''
+        },
+        {
+            name: '',
+            description: '',
+            link: '',
+            repo: ''
+        },
+        {
+            name: '',
+            description: '',
+            link: '',
+            repo: ''
+        },
     ])
     
     return (
