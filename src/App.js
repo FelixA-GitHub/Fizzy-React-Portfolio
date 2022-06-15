@@ -18,8 +18,7 @@ function App() {
   ]);
 
   const [currentPage, setCurrentPage] = useState(pages[0]);
-
-  // const [contactSelected, setContactSelected] = useState(false);
+  
 
   return (
     <div>

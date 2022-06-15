@@ -1,7 +1,16 @@
-import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helpers';
+import React, { useState } from "react";
+import { capitalizeFirstLetter, validateEmail } from "../../utils/helpers"
 
 function Contact() {
+
+  const [pages] = useState([
+    {
+      name: "contact"
+    }
+  ]);
+
+  const [currentPage] = useState(pages[0]);
+
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
   const [errorMessage, setErrorMessage] = useState('');
@@ -37,7 +46,7 @@ function Contact() {
 
   return (
     <section>
-      <h1 data-testid="h1tag">Contact me</h1>
+      <h1 data-testid="h1tag" className="" style={{ fontSize: "84px" }}>{ capitalizeFirstLetter(currentPage.name) }</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>

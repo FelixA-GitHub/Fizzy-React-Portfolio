@@ -11,7 +11,7 @@ function Page({ currentPage }) {
 
     const renderPage = () => {
         switch (currentPage.name) {
-            case 'about me':
+            case 'about':
                 return <About />;
             case 'portfolio':
                 return <Portfolio />;
@@ -26,7 +26,6 @@ function Page({ currentPage }) {
 
     return (
         <section>
-            <h2>{capitalizeFirstLetter(currentPage.name)}</h2>
             <PageContent>{renderPage()}</PageContent>
         </section>
     );

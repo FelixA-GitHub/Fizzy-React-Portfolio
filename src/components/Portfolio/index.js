@@ -1,8 +1,15 @@
 import React, { useState } from 'react';
+import { capitalizeFirstLetter } from '../../utils/helpers';
 import Project from '../Project';
 
 //Portfolio function holds all the Projects to be presented to the viewer
 function Portfolio() {
+    const [pages] = useState([
+        {
+            name: "portfolio"
+        }
+    ]);
+    const [currentPage] = useState(pages[0]);
 
     const [projects] = useState([
         {
@@ -45,6 +52,7 @@ function Portfolio() {
 
     return (
         <div>
+            <h1 style={{ fontSize: "84px" }}>{ capitalizeFirstLetter(currentPage.name) }</h1>
             <div className='flex-row'>
                 {projects.map((project, i) => (
                     <Project
