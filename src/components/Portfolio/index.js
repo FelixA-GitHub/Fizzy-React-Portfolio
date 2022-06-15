@@ -6,7 +6,8 @@ import Project from '../Project';
 function Portfolio() {
     const [pages] = useState([
         {
-            name: "portfolio"
+            name: "portfolio", 
+            description: 'Links to my latest work' 
         }
     ]);
     const [currentPage] = useState(pages[0]);
@@ -52,7 +53,10 @@ function Portfolio() {
 
     return (
         <div>
-            <h1 style={{ fontSize: "84px" }}>{ capitalizeFirstLetter(currentPage.name) }</h1>
+            <h1 className="" style={{ fontSize: "64px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
+            <p>
+                {currentPage.description}
+            </p>
             <div className='flex-row'>
                 {projects.map((project, i) => (
                     <Project

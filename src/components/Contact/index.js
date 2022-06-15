@@ -5,7 +5,8 @@ function Contact() {
 
   const [pages] = useState([
     {
-      name: "contact"
+      name: "contact",
+      description: 'Contact me anytime with questions, constructive criticism, or inquiries of collaboration'
     }
   ]);
 
@@ -46,7 +47,11 @@ function Contact() {
 
   return (
     <section>
-      <h1 data-testid="h1tag" className="" style={{ fontSize: "84px" }}>{ capitalizeFirstLetter(currentPage.name) }</h1>
+      <h1 data-testid="h1tag" className="" style={{ fontSize: "64px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
+      <p>
+        {currentPage.description}
+      </p>
+      <hr />
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>

@@ -5,7 +5,8 @@ import { capitalizeFirstLetter } from '../../utils/helpers';
 function Resume() {
     const [pages] = useState([
         {
-            name: "resume"
+            name: "resume",
+            description: 'Downloadable resume and list of proficiencies. References available upon request' 
         }
     ]);
     const [currentPage] = useState(pages[0]);
@@ -14,7 +15,10 @@ function Resume() {
             <div className='container'>
                 <div className='row'>
                     <div className=''>
-                        <h1 className='' style={{ fontSize: "84px" }}>{ capitalizeFirstLetter(currentPage.name) }</h1>
+                        <h1 className="" style={{ fontSize: "64px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
+                        <p>
+                            {currentPage.description}
+                        </p>
                         <hr />
                         <h3>Front-End and Back-End Proficiencies</h3>
                         <ul>

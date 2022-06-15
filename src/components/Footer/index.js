@@ -21,14 +21,17 @@ function Footer() {
 
     return (
         <section>
-            <footer className="">
-                {icons.map(icon =>
-                (
-                    <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer">
-                        <i className={icon.name} fa-bounce></i>
-                    </a>
-                )
-                )}
+            <footer className="container">
+                <div className="row">
+                    {icons.map(icon =>
+                    (
+                        <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer">
+                            <i className={icon.name} fa-bounce></i>
+                        </a>
+                    )
+                    )}
+                </div>
+
             </footer>
         </section>
     );
