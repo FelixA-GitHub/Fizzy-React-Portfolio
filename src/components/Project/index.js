@@ -5,8 +5,8 @@ function Project({project}) {
     const { name, description, link, repo } = project;
 
     return (
-        <div className="project" key={name}>
-            <img
+        <div className="project flex-row px-4 my-5" key={name}>
+            <img width="500px" height="375px"
                 src={require(`../../assets/projects/${name}.jpg`)}
                 alt={removeHyphens(name) && capitalizeFirstLetter(name)}
                 className="project-bg"

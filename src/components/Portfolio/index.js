@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 import Project from '../Project';
+import { Row, Container, Col, Image } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 //Portfolio function holds all the Projects to be presented to the viewer
 function Portfolio() {
     const [pages] = useState([
         {
-            name: "portfolio", 
-            description: 'Links to my latest work' 
+            name: "portfolio",
+            description: 'Links to my latest work'
         }
     ]);
     const [currentPage] = useState(pages[0]);
@@ -52,21 +54,47 @@ function Portfolio() {
     ])
 
     return (
-        <div>
-            <h1 className="" style={{ fontSize: "64px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
-            <p>
+        <Container>
+            <p className="" style={{ fontSize: "28px" }}>
                 {currentPage.description}
             </p>
-            <div className='flex-row'>
+            <Row className='flex-row'>
+                <Col sm={7}>
+                    {/* <Image
+                    src=""
+                    fluid
+                    /> */}
+                </Col>
+                <Col sm={5}>
                 {projects.map((project, i) => (
-                    <Project
+                    <Project 
                         project={project}
                         key={"project" + i}
                     />
                 ))}
-            </div>
+                </Col>
+            </Row>
+            {/* <Row>
+                <Col sm>sm=true</Col>
+                <Col sm>sm=true</Col>
+                <Col sm>sm=true</Col>
+            </Row> */}
+        </Container>
+        // <div>
+        //     <h1 className="" style={{ fontSize: "64px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
+        //     <p>
+        //         {currentPage.description}
+        //     </p>
+        //     <div className='flex-row px-4 my-5'>
+        //         {projects.map((project, i) => (
+        //             <Project
+        //                 project={project}
+        //                 key={"project" + i}
+        //             />
+        //         ))}
+        //     </div>
 
-        </div>
+        // </div>
     );
 };
 
