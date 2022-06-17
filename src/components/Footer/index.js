@@ -23,7 +23,7 @@ function Footer() {
 
     return (
         <section>
-            <footer class="py-5 my-5 bg-danger">
+            <footer class="py-5 bg-danger">
                 <Container>
                     <div class="row">
                         {icons.map(icon =>

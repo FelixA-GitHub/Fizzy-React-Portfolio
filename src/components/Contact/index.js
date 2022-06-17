@@ -46,31 +46,36 @@ function Contact() {
   };
 
   return (
-    <section>
-      <h1 data-testid="h1tag" className="" style={{ fontSize: "64px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
-      <p>
-        {currentPage.description}
-      </p>
-      <hr />
-      <form id="contact-form" onSubmit={handleSubmit}>
+    <section class="">
+
+      <form class="form-horizontal" id="contact-form" onSubmit={handleSubmit}>
         <div>
+          <h1 data-testid="h1tag" className="title" style={{ fontSize: "64px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
+          <p>
+            {currentPage.description}
+          </p>
+        </div>
+
+        <div class="form-group">
           <label htmlFor="name">Name:</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+          <input class="form-control" type="text" name="name" defaultValue={name} onBlur={handleChange} />
         </div>
-        <div>
+        <div class="form-group">
           <label htmlFor="email">Email address:</label>
-          <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+          <input class="form-control" type="email" name="email" defaultValue={email} onBlur={handleChange} />
         </div>
-        <div>
+        <div class="form-group">
           <label htmlFor="message">Message:</label>
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+          <textarea class="form-control" name="message" rows="5" defaultValue={message} onBlur={handleChange} />
         </div>
         {errorMessage && (
-          <div>
+          <div class="form-group">
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="button" type="submit">Submit</button>
+        <div>
+          <button class="btn btn-danger draw-border" data-testid="button" type="submit" >Submit</button>
+        </div>
       </form>
     </section>
   );

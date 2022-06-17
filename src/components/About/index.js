@@ -15,19 +15,17 @@ function About() {
   const [currentPage] = useState(pages[0]);
 
   return (
-    <section className="my-5">
-      <div className="">
-        <div className="">
-          <h1 className="" style={{ fontSize: "64px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
-          <p>
-            {currentPage.description}
-          </p>
+    <section class="">
+      <div class="">
+        <div class="card border-0">
+          <img class="card-img-top" src={coverImage} alt="light bulb"></img>
+          <div class="card-img-overlay card-inverse">
+            <h1 class="" style={{ fontSize: "64px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
+            <div>            
+              <p class="about-desc">{currentPage.description}</p>
+            </div>
+          </div>
         </div>
-        <img src={coverImage} alt="light bulb"></img>
-
-        <p>
-          The contents of this area to be determined
-        </p>
       </div>
     </section>
   );

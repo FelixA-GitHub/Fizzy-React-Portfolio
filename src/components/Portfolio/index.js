@@ -20,8 +20,6 @@ function Portfolio() {
     ]);
     const [currentPage] = useState(pages[0]);
 
-    const [open, setOpen] = useState(false);
-
     const [projects] = useState([
         {
             name: 'run-buddy',
@@ -67,10 +65,10 @@ function Portfolio() {
             <p className="" style={{ fontSize: "28px" }}>
                 {currentPage.description}
             </p>
-            
-            <Row className='flex-row  py-4'>
+
+            <Row className='d-flex row py-4'>
                 <Col sm={6}>
-                    <Card style={{ width: '32rem'}} border="dark">
+                    <Card style={{ width: '32rem' }} border="dark" >
                         <Card.Img variant="top" src={runbuddy} className="" />
                         <Card.ImgOverlay>
                             <Card.Title>{capitalizeFirstLetter(projects[0].name)}</Card.Title>
@@ -84,31 +82,31 @@ function Portfolio() {
                     </Card>
                 </Col>
                 <Col sm={6}>
-                    <Card style={{ width: '32rem'}} border="dark">
-                        <Card.Img variant="top" src={regalcare} />
-                        <Card.ImgOverlay>
-                            <Card.Title className='img-hover'>{capitalizeFirstLetter(projects[1].name)}</Card.Title>
+                    <Card style={{ width: '32rem' }} border="dark">
+                        <Card.Img variant="top" src={datamammoth} />
+                        <Card.ImgOverlay className=''>
+                            <Card.Title className=''>{capitalizeFirstLetter(projects[1].name)}</Card.Title>
                             <Card.Subtitle className="mb-2 text-muted">{projects[1].description}</Card.Subtitle>
                             <Card.Text>
-                            A simple search engine for movies, with a favorites list.
+                                A simple search engine for movies, with a favorites list.
                             </Card.Text>
                             <Card.Link href="https://felixa-github.github.io/Data-Mammoth/">App Link</Card.Link>
                             <Card.Link href="https://github.com/FelixA-GitHub/Data-Mammoth.git">GitHub Repo</Card.Link>
                         </Card.ImgOverlay>
                     </Card>
                 </Col>
-                
+
             </Row>
 
             <Row className='flex-row  py-4'>
                 <Col sm={6}>
-                    <Card style={{ width: '32rem'}} border="dark">
-                        <Card.Img variant="top" src={datamammoth} />
+                    <Card style={{ width: '32rem' }} border="dark">
+                        <Card.Img variant="top" src={regalcare} />
                         <Card.ImgOverlay>
                             <Card.Title>{capitalizeFirstLetter(projects[2].name)}</Card.Title>
                             <Card.Subtitle className="mb-2 text-muted">{projects[2].description}</Card.Subtitle>
                             <Card.Text>
-                            A website dedicated to traveling medical professionals.
+                                A website dedicated to traveling medical professionals.
                             </Card.Text>
                             <Card.Link href="https://felixa-github.github.io/grasshopper-travel/">App Link</Card.Link>
                             <Card.Link href="https://github.com/FelixA-GitHub/grasshopper-travel.git">GitHub Repo</Card.Link>
@@ -116,7 +114,7 @@ function Portfolio() {
                     </Card>
                 </Col>
                 <Col sm={6}>
-                    <Card style={{ width: '32rem'}} border="dark">
+                    <Card style={{ width: '32rem' }} border="dark">
                         <Card.Img variant="top" src={construction1} />
                         <Card.ImgOverlay>
                             <Card.Title>Coming Soon</Card.Title>
@@ -130,10 +128,10 @@ function Portfolio() {
                     </Card>
                 </Col>
             </Row>
-            
+
             <Row className='flex-row  py-4'>
                 <Col sm={6}>
-                    <Card style={{ width: '32rem'}} border="dark">
+                    <Card style={{ width: '32rem' }} border="dark">
                         <Card.Img variant="top" src={construction2} />
                         <Card.ImgOverlay>
                             <Card.Title>Coming Soon</Card.Title>
@@ -147,7 +145,7 @@ function Portfolio() {
                     </Card>
                 </Col>
                 <Col sm={6}>
-                    <Card style={{ width: '32rem'}} border="dark">
+                    <Card style={{ width: '32rem' }} border="dark">
                         <Card.Img variant="top" src={construction3} />
                         <Card.ImgOverlay>
                             <Card.Title>Coming Soon</Card.Title>
