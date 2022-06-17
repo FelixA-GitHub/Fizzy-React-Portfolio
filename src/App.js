@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 
 
 
+
 function App() {
   const [pages] = useState([
     {
@@ -24,9 +25,9 @@ function App() {
   return (
     <div>
       <Header>
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="danger" expand="lg" className="text-white">
           <Container>
-            <Navbar.Brand href="#home">Felix Acevedo</Navbar.Brand>
+            <Navbar.Brand href="#home" className="text-white">Felix Acevedo</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto" pages={pages}
@@ -45,7 +46,7 @@ function App() {
             </Navbar.Collapse>
           </Container>
         </Navbar>
-        
+
       </Header>
       <main>
         <Page currentPage={currentPage}></Page>

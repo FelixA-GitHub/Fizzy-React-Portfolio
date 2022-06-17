@@ -1,4 +1,6 @@
 import React from "react";
+import {Container} from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Footer() {
 
@@ -21,16 +23,19 @@ function Footer() {
 
     return (
         <section>
-            <footer className="container">
-                <div className="row">
-                    {icons.map(icon =>
-                    (
-                        <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer">
-                            <i className={icon.name} fa-bounce></i>
-                        </a>
-                    )
-                    )}
-                </div>
+            <footer class="py-5 my-5 bg-danger">
+                <Container>
+                    <div class="row text-white">
+                        {icons.map(icon =>
+                        (
+                            <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer">
+                                <i class={icon.name} fa-bounce></i>
+                            </a>
+                        )
+                        )}
+                    </div>
+                </Container>
+
 
             </footer>
         </section>

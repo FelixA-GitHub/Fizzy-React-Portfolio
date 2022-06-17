@@ -15,7 +15,7 @@ function Resume() {
             <div className='container'>
                 <div className='row'>
                     <div className=''>
-                        <h1 className="" style={{ fontSize: "64px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
+                        <h1 className="" style={{ fontSize: "46px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
                         <p>
                             {currentPage.description}
                         </p>
