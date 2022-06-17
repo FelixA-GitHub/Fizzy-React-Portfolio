@@ -62,7 +62,7 @@ function Portfolio() {
     return (
         <Container>
             <h1 className="" style={{ fontSize: "46px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
-            <p className="" style={{ fontSize: "28px" }}>
+            <p className="" style={{ fontSize: "20px" }}>
                 {currentPage.description}
             </p>
 

@@ -50,7 +50,7 @@ function Contact() {
 
       <form class="form-horizontal" id="contact-form" onSubmit={handleSubmit}>
         <div>
-          <h1 data-testid="h1tag" className="title" style={{ fontSize: "64px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
+          <h1 data-testid="h1tag" className="title" style={{ fontSize: "46px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
           <p>
             {currentPage.description}
           </p>

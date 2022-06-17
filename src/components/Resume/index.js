@@ -11,7 +11,7 @@ function Resume() {
     ]);
     const [currentPage] = useState(pages[0]);
     return (
-        <section className=''>
+        <section className='resume-section'>
             <div className='container'>
                 <div className='row'>
                     <div className=''>
