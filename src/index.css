@@ -1,9 +1,5 @@
 /* Global styling */
 
-section {
-    background-color: black;
-}
-
 h1, h3, ul, li, p, label, input {
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -14,6 +10,10 @@ form div, section .resume-section {
 }
 
 /* Contact Area */
+
+.bg-contact {
+    background-color: #84A98C;
+}
 
 .draw-border {
     box-shadow: inset 0 0 0 4px #58afd1;
@@ -74,9 +74,15 @@ form div, section .resume-section {
   }
 
   /* Resume Area */
-
+.bg-resume {
+    background-color: #354F52;
+}
 
   /* Portfolio Area */
+
+  .bg-portfolio {
+    background-color: #2F3E46;
+  }
 
   div .card-desc-middle {
     margin: 5rem 1% 1% 1%;
@@ -182,4 +188,9 @@ div .subtitle-md {
     text-align: center;
     font-size: larger;
     margin: 5% auto;
+}
+
+/* Nav Area */
+.bg-nav, .bg-footer {
+    background-color: #CAD2C5;
 }

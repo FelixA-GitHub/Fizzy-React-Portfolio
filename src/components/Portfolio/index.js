@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 import Project from '../Project';
-import { Row, Container, Col, Card } from "react-bootstrap";
+import { Row, Col, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import runbuddy from '../../assets/projects/run-buddy.png'
 import regalcare from '../../assets/projects/regalcare.png'
@@ -60,107 +60,126 @@ function Portfolio() {
     ])
 
     return (
-        <Container>
-            <h1 className="" style={{ fontSize: "46px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
-            <p className="" style={{ fontSize: "20px" }}>
-                {currentPage.description}
-            </p>
+        <section class='bg-portfolio container-fluid'>
+            <div class="row d-flex">
+                <h1 className="" style={{ fontSize: "46px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
+                <p className="" style={{ fontSize: "20px" }}>
+                    {currentPage.description}
+                </p>
 
-            <Row className='d-flex row py-4'>
-                <Col sm={6}>
-                    <Card style={{ width: '32rem' }} border="dark"  className='example' >
-                        <Card.Img variant="top" src={runbuddy} className="" />
-                        <Card.ImgOverlay  className='content'>
-                            <Card.Title className='title-lg'>{capitalizeFirstLetter(projects[0].name)}</Card.Title>
-                            <Card.Subtitle className="text-muted subtitle-md">{projects[0].description}</Card.Subtitle>
-                            <Card.Text className='card-desc-middle'>
-                                A website that offers Fitness Training Services.
-                            </Card.Text>
-                            <Card.Link className='card-link-bottom' href="https://felixa-github.github.io/run-buddy/"  >App Link</Card.Link>
-                            <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub/run-buddy.git" >GitHub Repo</Card.Link>
-                        </Card.ImgOverlay>
-                    </Card>
-                </Col>
-                <Col sm={6}>
-                    <Card style={{ width: '32rem' }} border="dark" className='example'>
-                        <Card.Img variant="top" src={datamammoth} />
-                        <Card.ImgOverlay  className='content'>
-                            <Card.Title className='title-lg'>{capitalizeFirstLetter(projects[1].name)}</Card.Title>
-                            <Card.Subtitle className="text-muted subtitle-md">{projects[1].description}</Card.Subtitle>
-                            <Card.Text className='card-desc-middle'>
-                                A simple search engine for movies, with a favorites list.
-                            </Card.Text>
-                            <Card.Link className='card-link-bottom' href="https://felixa-github.github.io/Data-Mammoth/">App Link</Card.Link>
-                            <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub/Data-Mammoth.git">GitHub Repo</Card.Link>
-                        </Card.ImgOverlay>
-                    </Card>
-                </Col>
+                <Row className='d-flex row py-4'>
+                    <Col sm={6}>
+                        <Card style={{ width: '32rem' }} border="dark" className='example' >
+                            <Card.Img variant="top" src={runbuddy} className="" />
+                            <Card.ImgOverlay className='content'>
+                                <Card.Title className='title-lg'>{capitalizeFirstLetter(projects[0].name)}</Card.Title>
+                                <Card.Subtitle className="text-muted subtitle-md">{projects[0].description}</Card.Subtitle>
+                                <Card.Text className='card-desc-middle'>
+                                    A website that offers Fitness Training Services.
+                                </Card.Text>
+                                <Card.Link className='card-link-bottom' href="https://felixa-github.github.io/run-buddy/"  >App Link</Card.Link>
+                                <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub/run-buddy.git" >GitHub Repo</Card.Link>
+                            </Card.ImgOverlay>
+                        </Card>
+                    </Col>
+                    <Col sm={6}>
+                        <Card style={{ width: '32rem' }} border="dark" className='example'>
+                            <Card.Img variant="top" src={datamammoth} />
+                            <Card.ImgOverlay className='content'>
+                                <Card.Title className='title-lg'>{capitalizeFirstLetter(projects[1].name)}</Card.Title>
+                                <Card.Subtitle className="text-muted subtitle-md">{projects[1].description}</Card.Subtitle>
+                                <Card.Text className='card-desc-middle'>
+                                    A simple search engine for movies, with a favorites list.
+                                </Card.Text>
+                                <Card.Link className='card-link-bottom' href="https://felixa-github.github.io/Data-Mammoth/">App Link</Card.Link>
+                                <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub/Data-Mammoth.git">GitHub Repo</Card.Link>
+                            </Card.ImgOverlay>
+                        </Card>
+                    </Col>
 
-            </Row>
+                </Row>
 
-            <Row className='flex-row  py-4'>
-                <Col sm={6}>
-                    <Card style={{ width: '32rem' }} border="dark" className='example'>
-                        <Card.Img variant="top" src={regalcare} />
-                        <Card.ImgOverlay className='content'>
-                            <Card.Title className='title-lg'>{capitalizeFirstLetter(projects[2].name)}</Card.Title>
-                            <Card.Subtitle className="text-muted subtitle-md">{projects[2].description}</Card.Subtitle>
-                            <Card.Text className='card-desc-middle'>
-                                A website dedicated to traveling medical professionals.
-                            </Card.Text>
-                            <Card.Link className='card-link-bottom' href="https://felixa-github.github.io/grasshopper-travel/">App Link</Card.Link>
-                            <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub/grasshopper-travel.git">GitHub Repo</Card.Link>
-                        </Card.ImgOverlay>
-                    </Card>
-                </Col>
-                <Col sm={6}>
-                    <Card style={{ width: '32rem' }} border="dark" className='example'>
-                        <Card.Img variant="top" src={construction1} />
-                        <Card.ImgOverlay className='content'>
-                            <Card.Title className='title-lg'>Coming Soon</Card.Title>
-                            <Card.Subtitle className="text-muted subtitle-md">{projects[3].description}</Card.Subtitle>
-                            <Card.Text className='card-desc-middle'>
-                                Coming soon. Project in production.
-                            </Card.Text>
-                            <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub">App Link</Card.Link>
-                            <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub">GitHub Repo</Card.Link>
-                        </Card.ImgOverlay>
-                    </Card>
-                </Col>
-            </Row>
+                <Row className='flex-row  py-4'>
+                    <Col sm={6}>
+                        <Card style={{ width: '32rem' }} border="dark" className='example'>
+                            <Card.Img variant="top" src={regalcare} />
+                            <Card.ImgOverlay className='content'>
+                                <Card.Title className='title-lg'>{capitalizeFirstLetter(projects[2].name)}</Card.Title>
+                                <Card.Subtitle className="text-muted subtitle-md">{projects[2].description}</Card.Subtitle>
+                                <Card.Text className='card-desc-middle'>
+                                    A website dedicated to traveling medical professionals.
+                                </Card.Text>
+                                <Card.Link className='card-link-bottom' href="https://felixa-github.github.io/grasshopper-travel/">App Link</Card.Link>
+                                <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub/grasshopper-travel.git">GitHub Repo</Card.Link>
+                            </Card.ImgOverlay>
+                        </Card>
+                    </Col>
+                    <Col sm={6}>
+                        <Card style={{ width: '32rem' }} border="dark" className='example'>
+                            <Card.Img variant="top" src={construction1} />
+                            <Card.ImgOverlay className='content'>
+                                <Card.Title className='title-lg'>Coming Soon</Card.Title>
+                                <Card.Subtitle className="text-muted subtitle-md">{projects[3].description}</Card.Subtitle>
+                                <Card.Text className='card-desc-middle'>
+                                    Coming soon. Project in production.
+                                </Card.Text>
+                                <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub">App Link</Card.Link>
+                                <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub">GitHub Repo</Card.Link>
+                            </Card.ImgOverlay>
+                        </Card>
+                    </Col>
+                </Row>
 
-            <Row className='flex-row  py-4'>
-                <Col sm={6}>
-                    <Card style={{ width: '32rem' }} border="dark" className='example'>
-                        <Card.Img variant="top" src={construction2} />
-                        <Card.ImgOverlay className='content'>
-                            <Card.Title className='title-lg'>Coming Soon</Card.Title>
-                            <Card.Subtitle className="text-muted subtitle-md">{projects[0].description}</Card.Subtitle>
-                            <Card.Text className='card-desc-middle'>
-                                Coming soon. Project in production.
-                            </Card.Text>
-                            <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub">App Link</Card.Link>
-                            <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub">GitHub Repo</Card.Link>
-                        </Card.ImgOverlay>
-                    </Card>
-                </Col>
-                <Col sm={6}>
-                    <Card style={{ width: '32rem' }} border="dark" className='example'>
-                        <Card.Img variant="top" src={construction3} />
-                        <Card.ImgOverlay className='content'>
-                            <Card.Title className='title-lg'>Coming Soon</Card.Title>
-                            <Card.Subtitle className="text-muted subtitle-md">{projects[0].description}</Card.Subtitle>
-                            <Card.Text className='card-desc-middle'>
-                                Coming soon. Project in production.
-                            </Card.Text>
-                            <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub">App Link</Card.Link>
-                            <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub">GitHub Repo</Card.Link>
-                        </Card.ImgOverlay>
-                    </Card>
-                </Col>
-            </Row>
+                <Row className='flex-row  py-4'>
+                    <Col sm={6}>
+                        <Card style={{ width: '32rem' }} border="dark" className='example'>
+                            <Card.Img variant="top" src={construction2} />
+                            <Card.ImgOverlay className='content'>
+                                <Card.Title className='title-lg'>Coming Soon</Card.Title>
+                                <Card.Subtitle className="text-muted subtitle-md">{projects[0].description}</Card.Subtitle>
+                                <Card.Text className='card-desc-middle'>
+                                    Coming soon. Project in production.
+                                </Card.Text>
+                                <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub">App Link</Card.Link>
+                                <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub">GitHub Repo</Card.Link>
+                            </Card.ImgOverlay>
+                        </Card>
+                    </Col>
+                    <Col sm={6}>
+                        <Card style={{ width: '32rem' }} border="dark" className='example'>
+                            <Card.Img variant="top" src={construction3} />
+                            <Card.ImgOverlay className='content'>
+                                <Card.Title className='title-lg'>Coming Soon</Card.Title>
+                                <Card.Subtitle className="text-muted subtitle-md">{projects[0].description}</Card.Subtitle>
+                                <Card.Text className='card-desc-middle'>
+                                    Coming soon. Project in production.
+                                </Card.Text>
+                                <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub">App Link</Card.Link>
+                                <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub">GitHub Repo</Card.Link>
+                            </Card.ImgOverlay>
+                        </Card>
+                    </Col>
+                </Row>
+            </div>
 
-        </Container>
+
+        </section>
+        // <section className="p-0">
+        //     <div className="container-fluid p-0">
+        //         <h1 className="text-center margin-top">{capitalizeFirstLetter(currentPage.name)}</h1>
+        //         <hr className="my-4" />
+        //         <div className="row no-gutters popup-gallery">
+
+        //                 {projects.map((project, idx) => (
+        //                     <Project
+        //                         project={project}
+        //                         key={"project" + idx}
+        //                     />
+        //                 ))}
+        //             </div>
+
+        //     </div>
+        // </section>
     );
 };
 

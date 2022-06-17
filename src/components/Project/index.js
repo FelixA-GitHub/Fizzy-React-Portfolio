@@ -6,19 +6,21 @@ function Project({project}) {
 
     return (
         <div className="project flex-row px-4 my-5" key={name}>
-            <img width="500px" height="375px"
+            <img
                 src={require(`../../assets/projects/${name}.jpg`)}
                 alt={removeHyphens(name) && capitalizeFirstLetter(name)}
                 className="project-bg"
             />
             <div className="project-text">
-                <p>{description}</p>
-                <h3>
+                <div>
                     <a href={link}>{removeHyphens(name) && capitalizeFirstLetter(name)}</a>{' '}
                     <a href={repo}>
                         <i className="fab fa-github"></i>
                     </a>
-                </h3>
+                    <p>{description}</p>  
+                </div>
+                
+                
             </div>
             
         </div>

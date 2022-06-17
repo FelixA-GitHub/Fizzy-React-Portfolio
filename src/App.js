@@ -24,9 +24,9 @@ function App() {
   return (
     <div>
       <Header>
-        <Navbar bg="danger" expand="lg" className="text-white">
+        <Navbar expand="lg" className="text-white bg-nav">
           <Container>
-            <Navbar.Brand href="#home" className="text-white">Felix Acevedo</Navbar.Brand>
+            <Navbar.Brand href="#home" className="text-dark">Felix Acevedo</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto" pages={pages}

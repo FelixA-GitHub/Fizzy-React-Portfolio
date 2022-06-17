@@ -23,7 +23,7 @@ function Footer() {
 
     return (
         <section>
-            <footer class="py-5 bg-danger">
+            <footer class="py-5 bg-footer">
                 <Container>
                     <div class="row">
                         <div class="col-lg-8">
