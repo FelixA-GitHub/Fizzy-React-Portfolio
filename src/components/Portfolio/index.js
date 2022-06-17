@@ -68,11 +68,11 @@ function Portfolio() {
 
             <Row className='d-flex row py-4'>
                 <Col sm={6}>
-                    <Card style={{ width: '32rem' }} border="dark" className='example' >
+                    <Card style={{ width: '32rem' }} border="dark"  className='example' >
                         <Card.Img variant="top" src={runbuddy} className="" />
-                        <Card.ImgOverlay className='content'>
-                            <Card.Title className=''>{capitalizeFirstLetter(projects[0].name)}</Card.Title>
-                            <Card.Subtitle className="text-muted">{projects[0].description}</Card.Subtitle>
+                        <Card.ImgOverlay  className='content'>
+                            <Card.Title className='title-lg'>{capitalizeFirstLetter(projects[0].name)}</Card.Title>
+                            <Card.Subtitle className="text-muted subtitle-md">{projects[0].description}</Card.Subtitle>
                             <Card.Text className='card-desc-middle'>
                                 A website that offers Fitness Training Services.
                             </Card.Text>
@@ -82,16 +82,16 @@ function Portfolio() {
                     </Card>
                 </Col>
                 <Col sm={6}>
-                    <Card style={{ width: '32rem' }} border="dark">
+                    <Card style={{ width: '32rem' }} border="dark" className='example'>
                         <Card.Img variant="top" src={datamammoth} />
-                        <Card.ImgOverlay className=''>
-                            <Card.Title className=''>{capitalizeFirstLetter(projects[1].name)}</Card.Title>
-                            <Card.Subtitle className="mb-2 text-muted">{projects[1].description}</Card.Subtitle>
-                            <Card.Text>
+                        <Card.ImgOverlay  className='content'>
+                            <Card.Title className='title-lg'>{capitalizeFirstLetter(projects[1].name)}</Card.Title>
+                            <Card.Subtitle className="text-muted subtitle-md">{projects[1].description}</Card.Subtitle>
+                            <Card.Text className='card-desc-middle'>
                                 A simple search engine for movies, with a favorites list.
                             </Card.Text>
-                            <Card.Link href="https://felixa-github.github.io/Data-Mammoth/">App Link</Card.Link>
-                            <Card.Link href="https://github.com/FelixA-GitHub/Data-Mammoth.git">GitHub Repo</Card.Link>
+                            <Card.Link className='card-link-bottom' href="https://felixa-github.github.io/Data-Mammoth/">App Link</Card.Link>
+                            <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub/Data-Mammoth.git">GitHub Repo</Card.Link>
                         </Card.ImgOverlay>
                     </Card>
                 </Col>
@@ -100,30 +100,30 @@ function Portfolio() {
 
             <Row className='flex-row  py-4'>
                 <Col sm={6}>
-                    <Card style={{ width: '32rem' }} border="dark">
+                    <Card style={{ width: '32rem' }} border="dark" className='example'>
                         <Card.Img variant="top" src={regalcare} />
-                        <Card.ImgOverlay>
-                            <Card.Title>{capitalizeFirstLetter(projects[2].name)}</Card.Title>
-                            <Card.Subtitle className="mb-2 text-muted">{projects[2].description}</Card.Subtitle>
-                            <Card.Text>
+                        <Card.ImgOverlay className='content'>
+                            <Card.Title className='title-lg'>{capitalizeFirstLetter(projects[2].name)}</Card.Title>
+                            <Card.Subtitle className="text-muted subtitle-md">{projects[2].description}</Card.Subtitle>
+                            <Card.Text className='card-desc-middle'>
                                 A website dedicated to traveling medical professionals.
                             </Card.Text>
-                            <Card.Link href="https://felixa-github.github.io/grasshopper-travel/">App Link</Card.Link>
-                            <Card.Link href="https://github.com/FelixA-GitHub/grasshopper-travel.git">GitHub Repo</Card.Link>
+                            <Card.Link className='card-link-bottom' href="https://felixa-github.github.io/grasshopper-travel/">App Link</Card.Link>
+                            <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub/grasshopper-travel.git">GitHub Repo</Card.Link>
                         </Card.ImgOverlay>
                     </Card>
                 </Col>
                 <Col sm={6}>
-                    <Card style={{ width: '32rem' }} border="dark">
+                    <Card style={{ width: '32rem' }} border="dark" className='example'>
                         <Card.Img variant="top" src={construction1} />
-                        <Card.ImgOverlay>
-                            <Card.Title>Coming Soon</Card.Title>
-                            <Card.Subtitle className="mb-2 text-muted">{projects[3].description}</Card.Subtitle>
-                            <Card.Text>
+                        <Card.ImgOverlay className='content'>
+                            <Card.Title className='title-lg'>Coming Soon</Card.Title>
+                            <Card.Subtitle className="text-muted subtitle-md">{projects[3].description}</Card.Subtitle>
+                            <Card.Text className='card-desc-middle'>
                                 Coming soon. Project in production.
                             </Card.Text>
-                            <Card.Link href="https://github.com/FelixA-GitHub">App Link</Card.Link>
-                            <Card.Link href="https://github.com/FelixA-GitHub">GitHub Repo</Card.Link>
+                            <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub">App Link</Card.Link>
+                            <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub">GitHub Repo</Card.Link>
                         </Card.ImgOverlay>
                     </Card>
                 </Col>
@@ -131,30 +131,30 @@ function Portfolio() {
 
             <Row className='flex-row  py-4'>
                 <Col sm={6}>
-                    <Card style={{ width: '32rem' }} border="dark">
+                    <Card style={{ width: '32rem' }} border="dark" className='example'>
                         <Card.Img variant="top" src={construction2} />
-                        <Card.ImgOverlay>
-                            <Card.Title>Coming Soon</Card.Title>
-                            <Card.Subtitle className="mb-2 text-muted">{projects[0].description}</Card.Subtitle>
-                            <Card.Text>
+                        <Card.ImgOverlay className='content'>
+                            <Card.Title className='title-lg'>Coming Soon</Card.Title>
+                            <Card.Subtitle className="text-muted subtitle-md">{projects[0].description}</Card.Subtitle>
+                            <Card.Text className='card-desc-middle'>
                                 Coming soon. Project in production.
                             </Card.Text>
-                            <Card.Link href="https://github.com/FelixA-GitHub">App Link</Card.Link>
-                            <Card.Link href="https://github.com/FelixA-GitHub">GitHub Repo</Card.Link>
+                            <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub">App Link</Card.Link>
+                            <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub">GitHub Repo</Card.Link>
                         </Card.ImgOverlay>
                     </Card>
                 </Col>
                 <Col sm={6}>
-                    <Card style={{ width: '32rem' }} border="dark">
+                    <Card style={{ width: '32rem' }} border="dark" className='example'>
                         <Card.Img variant="top" src={construction3} />
-                        <Card.ImgOverlay>
-                            <Card.Title>Coming Soon</Card.Title>
-                            <Card.Subtitle className="mb-2 text-muted">{projects[0].description}</Card.Subtitle>
-                            <Card.Text>
+                        <Card.ImgOverlay className='content'>
+                            <Card.Title className='title-lg'>Coming Soon</Card.Title>
+                            <Card.Subtitle className="text-muted subtitle-md">{projects[0].description}</Card.Subtitle>
+                            <Card.Text className='card-desc-middle'>
                                 Coming soon. Project in production.
                             </Card.Text>
-                            <Card.Link href="https://github.com/FelixA-GitHub">App Link</Card.Link>
-                            <Card.Link href="https://github.com/FelixA-GitHub">GitHub Repo</Card.Link>
+                            <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub">App Link</Card.Link>
+                            <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub">GitHub Repo</Card.Link>
                         </Card.ImgOverlay>
                     </Card>
                 </Col>

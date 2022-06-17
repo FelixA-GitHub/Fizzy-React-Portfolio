@@ -85,18 +85,18 @@ form div, section .resume-section {
   /* Portfolio Area */
 
   div .card-desc-middle {
-    margin: 10rem 1% 1% 1%;
+    margin: 5rem 1% 1% 1%;
     padding: 1% 11%;
   }
 
-  div .card-link-bottom {
-    margin: 20rem 1% 1% 1%;
-    padding: 1% 11%;
-  }
+div .title-lg {
+    font-size: 40px;
+    
+}
 
-  /* .card-hover:hover {
-    opacity: 85%;
-  } */
+div .subtitle-md {
+    font-size: 20px;
+}
 
   .example {
     position: relative;
@@ -122,9 +122,10 @@ form div, section .resume-section {
     -ms-transition: all 400ms ease-out;
     transition: all 400ms ease-out;
     text-align: center;
-  }
-  .example .content:hover {
+}
+.example .content:hover {
     opacity: 100%;
+    padding-top: 15%;
   }
   .example .content .text {
     height: 0;
