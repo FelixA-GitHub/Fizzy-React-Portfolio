@@ -13,12 +13,6 @@ form div, section .resume-section {
     padding: 1% 18%;
 }
 
-.about-desc {
-    text-align: center;
-    font-size: larger;
-    margin: 15% auto;
-}
-
 /* Contact Area */
 
 .draw-border {
@@ -139,3 +133,53 @@ div .subtitle-md {
     -webkit-transform: translateY(25px);
   }
   
+  /* About Area */
+
+  .about-example {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .about-content {
+    opacity: 0%;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #1c87c9;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    text-align: center;
+}
+.about-example .about-content:hover {
+    opacity: 100%;
+  }
+  .about-example .about-content .about-text {
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+  }
+  .about-example .about-content:hover .about-text {
+    opacity: 100%;
+    transform: translateY(15px);
+    -webkit-transform: translateY(15px);
+  }
+
+  .about-title {
+    padding-top: 5%;
+  }
+
+  .about-desc {
+    text-align: center;
+    font-size: larger;
+    margin: 5% auto;
+}

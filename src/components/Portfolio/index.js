@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
-// import Project from '../Project';
+import Project from '../Project';
 import { Row, Container, Col, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import runbuddy from '../../assets/projects/run-buddy.png'

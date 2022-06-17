@@ -1,5 +1,5 @@
 import React from "react";
-import {Container} from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Footer() {
@@ -26,17 +26,17 @@ function Footer() {
             <footer class="py-5 bg-danger">
                 <Container>
                     <div class="row">
-                        {icons.map(icon =>
+                        <div class="col-lg-8">
+                          {icons.map(icon =>
                         (
                             <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer">
                                 <i class={icon.name} fa-bounce></i>
                             </a>
                         )
-                        )}
+                        )}  
+                        </div> 
                     </div>
                 </Container>
-
-
             </footer>
         </section>
     );
