@@ -25,7 +25,7 @@ function Footer() {
         <section>
             <footer class="py-5 my-5 bg-danger">
                 <Container>
-                    <div class="row text-white">
+                    <div class="row">
                         {icons.map(icon =>
                         (
                             <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer">

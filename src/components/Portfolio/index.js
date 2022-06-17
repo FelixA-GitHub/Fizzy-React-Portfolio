@@ -66,9 +66,9 @@ function Portfolio() {
                 {currentPage.description}
             </p>
             
-            <Row className='flex-row'>
-                <Col sm={7}>
-                    <Card style={{ width: '32rem'}}>
+            <Row className='flex-row  py-4'>
+                <Col sm={6}>
+                    <Card style={{ width: '32rem'}} border="dark">
                         <Card.Img variant="top" src={runbuddy} className="" />
                         <Card.ImgOverlay>
                             <Card.Title>{capitalizeFirstLetter(projects[0].name)}</Card.Title>
@@ -81,11 +81,11 @@ function Portfolio() {
                         </Card.ImgOverlay>
                     </Card>
                 </Col>
-                <Col sm={5}>
-                    <Card style={{ width: '32rem'}}>
+                <Col sm={6}>
+                    <Card style={{ width: '32rem'}} border="dark">
                         <Card.Img variant="top" src={regalcare} />
                         <Card.ImgOverlay>
-                            <Card.Title>{capitalizeFirstLetter(projects[1].name)}</Card.Title>
+                            <Card.Title className='img-hover'>{capitalizeFirstLetter(projects[1].name)}</Card.Title>
                             <Card.Subtitle className="mb-2 text-muted">{projects[1].description}</Card.Subtitle>
                             <Card.Text>
                             A simple search engine for movies, with a favorites list.
@@ -95,11 +95,12 @@ function Portfolio() {
                         </Card.ImgOverlay>
                     </Card>
                 </Col>
+                
             </Row>
 
-            <Row className='flex-row'>
-                <Col sm={7}>
-                    <Card style={{ width: '32rem'}}>
+            <Row className='flex-row  py-4'>
+                <Col sm={6}>
+                    <Card style={{ width: '32rem'}} border="dark">
                         <Card.Img variant="top" src={datamammoth} />
                         <Card.ImgOverlay>
                             <Card.Title>{capitalizeFirstLetter(projects[2].name)}</Card.Title>
@@ -112,8 +113,8 @@ function Portfolio() {
                         </Card.ImgOverlay>
                     </Card>
                 </Col>
-                <Col sm={5}>
-                    <Card style={{ width: '32rem'}}>
+                <Col sm={6}>
+                    <Card style={{ width: '32rem'}} border="dark">
                         <Card.Img variant="top" src={construction1} />
                         <Card.ImgOverlay>
                             <Card.Title>Coming Soon</Card.Title>
@@ -128,9 +129,9 @@ function Portfolio() {
                 </Col>
             </Row>
             
-            <Row className='flex-row'>
-                <Col sm={7}>
-                    <Card style={{ width: '32rem'}}>
+            <Row className='flex-row  py-4'>
+                <Col sm={6}>
+                    <Card style={{ width: '32rem'}} border="dark">
                         <Card.Img variant="top" src={construction2} />
                         <Card.ImgOverlay>
                             <Card.Title>Coming Soon</Card.Title>
@@ -143,8 +144,8 @@ function Portfolio() {
                         </Card.ImgOverlay>
                     </Card>
                 </Col>
-                <Col sm={5}>
-                    <Card style={{ width: '32rem'}}>
+                <Col sm={6}>
+                    <Card style={{ width: '32rem'}} border="dark">
                         <Card.Img variant="top" src={construction3} />
                         <Card.ImgOverlay>
                             <Card.Title>Coming Soon</Card.Title>
