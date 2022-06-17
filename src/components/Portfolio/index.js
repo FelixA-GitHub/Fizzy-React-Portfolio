@@ -68,16 +68,16 @@ function Portfolio() {
 
             <Row className='d-flex row py-4'>
                 <Col sm={6}>
-                    <Card style={{ width: '32rem' }} border="dark" >
+                    <Card style={{ width: '32rem' }} border="dark" className='example' >
                         <Card.Img variant="top" src={runbuddy} className="" />
-                        <Card.ImgOverlay>
-                            <Card.Title>{capitalizeFirstLetter(projects[0].name)}</Card.Title>
-                            <Card.Subtitle className="mb-2 text-muted">{projects[0].description}</Card.Subtitle>
-                            <Card.Text>
+                        <Card.ImgOverlay className='content'>
+                            <Card.Title className=''>{capitalizeFirstLetter(projects[0].name)}</Card.Title>
+                            <Card.Subtitle className="text-muted">{projects[0].description}</Card.Subtitle>
+                            <Card.Text className='card-desc-middle'>
                                 A website that offers Fitness Training Services.
                             </Card.Text>
-                            <Card.Link href="https://felixa-github.github.io/run-buddy/">App Link</Card.Link>
-                            <Card.Link href="https://github.com/FelixA-GitHub/run-buddy.git">GitHub Repo</Card.Link>
+                            <Card.Link className='card-link-bottom' href="https://felixa-github.github.io/run-buddy/"  >App Link</Card.Link>
+                            <Card.Link className='card-link-bottom' href="https://github.com/FelixA-GitHub/run-buddy.git" >GitHub Repo</Card.Link>
                         </Card.ImgOverlay>
                     </Card>
                 </Col>
