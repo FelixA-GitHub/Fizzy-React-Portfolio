@@ -20,6 +20,8 @@ function Portfolio() {
     ]);
     const [currentPage] = useState(pages[0]);
 
+    const [open, setOpen] = useState(false);
+
     const [projects] = useState([
         {
             name: 'run-buddy',
