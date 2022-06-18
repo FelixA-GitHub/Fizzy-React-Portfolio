@@ -156,21 +156,22 @@ function Portfolio() {
 
 
         // </section>
-        <section className="p-0">
-            <div className="container-fluid p-0">
-                <h1 className="text-center margin-top">{capitalizeFirstLetter(currentPage.name)}</h1>
-                <div className="row ">
 
-                    {projects.map((project, idx) => (
-                        <Project
-                            project={project}
-                            key={"project" + idx}
-                        />
-                    ))}
-                </div>
+         <section className="p-0">
+             <div className="container-fluid p-0">
+                 <h1 className="text-center margin-top">{capitalizeFirstLetter(currentPage.name)}</h1>
+                 <div className="row ">
 
-            </div>
-        </section>
+                     {projects.map((project, idx) => (
+                         <Project
+                             project={project}
+                             key={"project" + idx}
+                         />
+                     ))}
+                 </div>
+
+             </div>
+         </section>
     );
 };
 

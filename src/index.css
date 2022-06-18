@@ -84,10 +84,10 @@ form div, section .resume-section {
     background-color: #2F3E46;
   }
 
-  div .card-desc-middle {
+  /* div .card-desc-middle {
     margin: 5rem 1% 1% 1%;
     padding: 1% 11%;
-  }
+  } */
 
 div .title-lg {
     font-size: 40px;
