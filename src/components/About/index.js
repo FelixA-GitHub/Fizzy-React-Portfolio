@@ -16,14 +16,14 @@ function About() {
   const [currentPage] = useState(pages[0]);
 
   return (
-    <section class="about-example">
+    <section className="about-example">
       
-        <div class="card border-0">
-          <img class="card-img-top" src={coverImage} alt="light bulb"></img>
-          <div class="card-img-overlay card-inverse about-content">
-            <h1 class="about-title" style={{ fontSize: "50px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
+        <div className="card border-0">
+          <img className="card-img-top" src={coverImage} alt="light bulb"></img>
+          <div className="card-img-overlay card-inverse about-content">
+            <h1 className="about-title" style={{ fontSize: "50px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
             <div>            
-              <p class="about-desc about-text">{currentPage.description}</p>
+              <p className="about-desc about-text">{currentPage.description}</p>
             </div>
           </div>
         </div>

@@ -46,9 +46,9 @@ function Contact() {
   };
 
   return (
-    <section class="bg-contact">
+    <section className="bg-contact">
 
-      <form class="form-horizontal" id="contact-form" onSubmit={handleSubmit}>
+      <form className="form-horizontal" id="contact-form" onSubmit={handleSubmit}>
         <div>
           <h1 data-testid="h1tag" className="title" style={{ fontSize: "46px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
           <p>
@@ -56,25 +56,25 @@ function Contact() {
           </p>
         </div>
 
-        <div class="form-group">
+        <div className="form-group">
           <label htmlFor="name">Name:</label>
-          <input class="form-control" type="text" name="name" defaultValue={name} onBlur={handleChange} />
+          <input className="form-control" type="text" name="name" defaultValue={name} onBlur={handleChange} />
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <label htmlFor="email">Email address:</label>
-          <input class="form-control" type="email" name="email" defaultValue={email} onBlur={handleChange} />
+          <input className="form-control" type="email" name="email" defaultValue={email} onBlur={handleChange} />
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <label htmlFor="message">Message:</label>
-          <textarea class="form-control" name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+          <textarea className="form-control" name="message" rows="5" defaultValue={message} onBlur={handleChange} />
         </div>
         {errorMessage && (
-          <div class="form-group">
+          <div className="form-group">
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
         <div>
-          <button class="btn btn-danger draw-border" data-testid="button" type="submit" >Submit</button>
+          <button className="btn btn-danger draw-border" data-testid="button" type="submit" >Submit</button>
         </div>
       </form>
     </section>
