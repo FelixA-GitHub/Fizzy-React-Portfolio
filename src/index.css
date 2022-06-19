@@ -89,6 +89,10 @@ form div, section .resume-section {
     padding: 1% 11%;
   } */
 
+  .card-text {
+    color: blue;
+  }
+
 div .title-lg {
     font-size: 40px;
     
