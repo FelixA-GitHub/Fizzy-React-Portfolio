@@ -1,5 +1,6 @@
 import React from "react";
 import { removeHyphens, capitalizeFirstLetter } from "../../utils/helpers";
+import 'bootstrap/dist/css/bootstrap.css';
 
 function Project({ project }) {
     const { name, description, link, repo } = project;

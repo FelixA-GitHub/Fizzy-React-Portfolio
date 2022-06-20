@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 import Project from '../Project';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import 'bootstrap/dist/css/bootstrap.css';
 
 //Portfolio function holds all the Projects to be presented to the viewer
 function Portfolio() {
@@ -160,15 +164,17 @@ function Portfolio() {
          <section className="p-0">
              <div className="container-fluid p-0">
                  <h1 className="text-center margin-top">{capitalizeFirstLetter(currentPage.name)}</h1>
-                 <div className="row ">
+                 <Row>
 
                      {projects.map((project, idx) => (
+                        <Col sm={6}>
                          <Project
                              project={project}
                              key={"project" + idx}
                          />
+                         </Col>
                      ))}
-                 </div>
+                 </Row>
 
              </div>
          </section>
