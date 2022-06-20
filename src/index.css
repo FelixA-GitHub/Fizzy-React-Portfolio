@@ -112,14 +112,14 @@ div .subtitle-md {
   }
   .content {
     opacity: 0%;
-    font-size: 25px;
+    font-size: 15px;
     position: absolute;
     top: 0;
     left: 0;
     color: #1c87c9;
     background-color: rgba(200, 200, 200, 0.7);
-    width: 525px;
-    height: 600px;
+    width: 95%;
+    height: 100%;
     -webkit-transition: all 400ms ease-out;
     -moz-transition: all 400ms ease-out;
     -o-transition: all 400ms ease-out;
@@ -192,6 +192,14 @@ div .subtitle-md {
     text-align: center;
     font-size: larger;
     margin: 5% auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+.avatar-img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
 }
 
 /* Nav Area */

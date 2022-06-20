@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
-import "../node_modules/jquery/dist/jquery.min.js";
-import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
+import "bootstrap/dist/js/bootstrap.min.js";
 
 
 function Nav(props) {
@@ -17,7 +16,7 @@ function Nav(props) {
 
   return (
 
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light px-3">
 
         <a className="navbar-brand" href="#home">Felix Acevedo</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

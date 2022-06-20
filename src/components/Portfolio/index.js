@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 import Project from '../Project';
-import Container from 'react-bootstrap/Container';
+// import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -161,23 +161,27 @@ function Portfolio() {
 
         // </section>
 
-         <section className="p-0">
-             <div className="container-fluid p-0">
-                 <h1 className="text-center margin-top">{capitalizeFirstLetter(currentPage.name)}</h1>
-                 <Row>
+        <section className="p-0 bg-portfolio">
+            <div>
+                <div className="container-fluid p-0">
+                    <h1 className="text-center margin-top">{capitalizeFirstLetter(currentPage.name)}</h1>
+                    <h3 className="text-center margin-top">{capitalizeFirstLetter(currentPage.description)}</h3>
+                    <Row className=''>
 
-                     {projects.map((project, idx) => (
-                        <Col sm={6}>
-                         <Project
-                             project={project}
-                             key={"project" + idx}
-                         />
-                         </Col>
-                     ))}
-                 </Row>
+                        {projects.map((project, idx) => (
+                            <Col sm={6}>
+                                <Project
+                                    project={project}
+                                    key={"project" + idx}
+                                />
+                            </Col>
+                        ))}
+                    </Row>
 
-             </div>
-         </section>
+                </div>
+            </div>
+
+        </section>
     );
 };
 

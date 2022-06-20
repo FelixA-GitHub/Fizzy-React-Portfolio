@@ -4,7 +4,8 @@ import Header from './components/Header';
 import Nav from './components/Nav';
 import Page from './components/Page';
 import Footer from './components/Footer';
-
+import "../node_modules/jquery/dist/jquery.min.js";
+import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
 
 
 function App() {

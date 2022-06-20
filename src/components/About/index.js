@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import coverImage from '../../assets/cover/cover-image.jpg';
+import avatar from '../../assets/avatar/avatar.jpg'
 import { capitalizeFirstLetter } from "../../utils/helpers";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -21,7 +22,8 @@ function About() {
         <div className="card border-0">
           <img className="card-img-top" src={coverImage} alt="light bulb"></img>
           <div className="card-img-overlay card-inverse about-content">
-            <h1 className="about-title" style={{ fontSize: "50px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
+            <h1 className="about-title" style={{ fontSize: "40px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
+            <img className="avatar-img" src={avatar} alt="avatar"></img>
             <div>            
               <p className="about-desc about-text">{currentPage.description}</p>
             </div>

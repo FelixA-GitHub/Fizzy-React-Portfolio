@@ -28,19 +28,22 @@ function Project({ project }) {
                 </div>
 
             </div> */}
-                <div className="card project" style={{ width: "18rem" }}>
+                <div className="card p-0" style={{ width: "18rem" }}>
                     <img className="card-img-top" src={require(`../../assets/portfolio/${name}.jpg`)}
                         alt={removeHyphens(name) && capitalizeFirstLetter(name)} />
-                    <div className="card-body">
-                        <p className="card-text">{description}</p>
-                        <a href={link}>{removeHyphens(name) && capitalizeFirstLetter(name)}</a>
-                        <div>
-                            <a href={repo}>
-                                <i className="fab fa-github"> Repo</i>
-                            </a>
-                        </div>
+                    <div className="card-img-overlay example">
+                        <div className="card-body content">
+                            <p className="card-text">{description}</p>
+                            <a href={link}>{removeHyphens(name) && capitalizeFirstLetter(name)}</a>
+                            <div>
+                                <a href={repo}>
+                                    <i className="fab fa-github"> Repo</i>
+                                </a>
+                            </div>
 
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
