@@ -44,13 +44,12 @@
 - JavaScript
 - CSS
 - HTML
-- Heroku
 ```
 
 ## Mock Up
-![Fizzy React Portfolio Screenshot](./public/img/budget%20tracker%20img.png)
+![Fizzy React Portfolio Screenshot](./src/assets/img/fizzy-react-portfolio.jpg)
 
-## Heroku Deployment
+## GitHub Deployment
 
 
 ## Questions
