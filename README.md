@@ -50,7 +50,7 @@
 ![Fizzy React Portfolio Screenshot](./src/assets/img/fizzy-react-portfolio.jpg)
 
 ## GitHub Deployment
-
+https://felixa-github.github.io/Fizzy-React-Portfolio/
 
 ## Questions
 
