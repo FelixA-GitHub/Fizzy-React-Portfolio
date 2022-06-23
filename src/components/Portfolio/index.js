@@ -36,10 +36,10 @@ function Portfolio() {
             repo: 'https://github.com/FelixA-GitHub/grasshopper-travel.git'
         },
         {
-            name: 'construction1',
-            description: 'TBD',
-            link: 'https://github.com/FelixA-GitHub',
-            repo: 'https://github.com/FelixA-GitHub'
+            name: 'fizzy-tech-blog',
+            description: 'JavaScript/Handlebars/CSS',
+            link: 'https://quiet-refuge-09071.herokuapp.com/homepage',
+            repo: 'https://github.com/FelixA-GitHub/Fizzy-Tech-Blog.git'
         }
         // {
         //     name: 'construction2',
