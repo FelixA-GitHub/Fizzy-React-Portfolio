@@ -22,7 +22,7 @@ function Footer() {
     return (
         <section>
             <footer>
-                <nav className="navbar navbar-light bg-light">
+                <div className="divbar navbar-light bg-light">
                     <div className="navbar-brand" href="#home">{icons.map(icon =>
                     (
                         <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer">
@@ -31,7 +31,7 @@ function Footer() {
                     )
                     )}
                     </div>
-                </nav>
+                </div>
             </footer>
         </section>
     );
