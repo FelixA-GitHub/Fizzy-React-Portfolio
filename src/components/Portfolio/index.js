@@ -4,6 +4,7 @@ import Project from '../Project';
 // import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
 import 'bootstrap/dist/css/bootstrap.css';
 
 //Portfolio function holds all the Projects to be presented to the viewer
@@ -161,9 +162,9 @@ function Portfolio() {
 
         // </section>
 
-        <section className="p-0 bg-portfolio">
+        <section className="p-4 bg-portfolio">
             <div>
-                <div className="container-fluid p-0">
+                <Container fluid className="p-0">
                     <h1 className="text-center margin-top">{capitalizeFirstLetter(currentPage.name)}</h1>
                     <h3 className="text-center margin-top">{capitalizeFirstLetter(currentPage.description)}</h3>
                     <Row className=''>
@@ -178,7 +179,7 @@ function Portfolio() {
                         ))}
                     </Row>
 
-                </div>
+                </Container>
             </div>
 
         </section>

@@ -39,7 +39,7 @@ function Resume() {
                             <li>React</li>
                         </ul>
                         <p>
-                            Here is my <a href={resume} download>resume</a>
+                            Here is my <a href={resume} download>Resume</a>
                         </p>
                     </div>
 
