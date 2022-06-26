@@ -15,43 +15,17 @@ function Footer() {
             <section className='mb-4'>
               <a
                 className='btn btn-primary btn-floating m-1'
-                style={{ backgroundColor: '#3b5998' }}
-                href='#!'
-                role='button'
-              >
-                <MDBIcon fab icon='facebook-f' />
-              </a>
-    
-              <a
-                className='btn btn-primary btn-floating m-1'
-                style={{ backgroundColor: '#55acee' }}
-                href='#!'
-                role='button'
-              >
-                <MDBIcon fab icon='twitter' />
-              </a>
-    
-              <a
-                className='btn btn-primary btn-floating m-1'
-                style={{ backgroundColor: '#dd4b39' }}
-                href='#!'
-                role='button'
-              >
-                <MDBIcon fab icon='google' />
-              </a>
-              <a
-                className='btn btn-primary btn-floating m-1'
                 style={{ backgroundColor: '#ac2bac' }}
-                href='#!'
+                href='https://stackoverflow.com/users/17420314/felix'
                 role='button'
               >
-                <MDBIcon fab icon='instagram' />
+                <MDBIcon fab icon='stack-overflow' />
               </a>
     
               <a
                 className='btn btn-primary btn-floating m-1'
                 style={{ backgroundColor: '#0082ca' }}
-                href='#!'
+                href='https://www.linkedin.com/in/felix-acevedo-b7596520a/'
                 role='button'
               >
                 <MDBIcon fab icon='linkedin-in' />
@@ -60,7 +34,7 @@ function Footer() {
               <a
                 className='btn btn-primary btn-floating m-1'
                 style={{ backgroundColor: '#333333' }}
-                href='#!'
+                href='https://github.com/FelixA-GitHub'
                 role='button'
               >
                 <MDBIcon fab icon='github' />
@@ -69,10 +43,7 @@ function Footer() {
           </div>
     
           <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-            © 2020 Copyright:
-            <a className='text-white' href='https://mdbootstrap.com/'>
-              MDBootstrap.com
-            </a>
+            © 2022 Felix Acevedo
           </div>
         </MDBFooter>
       );
