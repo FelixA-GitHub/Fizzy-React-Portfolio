@@ -1,5 +1,9 @@
 /* Global styling */
 
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
 h1, h3, ul, li, p, label, input {
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
