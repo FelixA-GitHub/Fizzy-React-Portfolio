@@ -47,7 +47,7 @@
 ```
 
 ## Mock Up
-![Fizzy React Portfolio Screenshot](./src/assets/img/fizzy-react-portfolio.jpg)
+![Fizzy React Portfolio Screenshot](./src/assets/cover/localhost_3000_.png)
 
 ## GitHub Deployment
 https://felixa-github.github.io/Fizzy-React-Portfolio/
