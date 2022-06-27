@@ -210,46 +210,49 @@ div .subtitle-md {
   border-radius: 50%;
 }
 
-.scroll-text {
-  height: 100%;
-  text-align: center;
-  
-  /* animation properties */
-  -moz-transform: translateY(100%);
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
-  
-  -moz-animation: my-animation 7s linear infinite;
-  -webkit-animation: my-animation 7s linear infinite;
-  animation: my-animation 7s linear infinite;
-}
-
-/* for Firefox */
-@-moz-keyframes my-animation {
-  from { -moz-transform: translateY(100%); }
-  to { -moz-transform: translateY(-100%); }
-}
-
-/* for Chrome */
-@-webkit-keyframes my-animation {
-  from { -webkit-transform: translateY(100%); }
-  to { -webkit-transform: translateY(-100%); }
-}
-
-@keyframes my-animation {
-  from {
-    -moz-transform: translateY(100%);
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%);
-  }
-  to {
-    -moz-transform: translateY(-100%);
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-  }
-}
-
 /* Nav Area */
 .bg-nav, .bg-footer {
     background-color: #CAD2C5;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  .scroll-text {
+    height: 100%;
+    text-align: center;
+    
+    /* animation properties */
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateY(100%); }
+    to { -moz-transform: translateY(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateY(100%); }
+    to { -webkit-transform: translateY(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateY(100%);
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+    to {
+      -moz-transform: translateY(-100%);
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%);
+    }
+  }
 }
