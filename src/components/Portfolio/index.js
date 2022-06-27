@@ -170,7 +170,7 @@ function Portfolio() {
                     <Row className=''>
 
                         {projects.map((project, idx) => (
-                            <Col sm={6}>
+                            <Col md={6}>
                                 <Project
                                     project={project}
                                     key={"project" + idx}
