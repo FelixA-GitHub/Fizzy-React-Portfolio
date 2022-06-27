@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Fizzy-React-Portfolio/static/css/main.1202e6e9.css",
+    "main.js": "/Fizzy-React-Portfolio/static/js/main.d2eca714.js",
+    "static/js/787.30aec1ab.chunk.js": "/Fizzy-React-Portfolio/static/js/787.30aec1ab.chunk.js",
+    "static/media/FullStackDeveloperResume.pdf": "/Fizzy-React-Portfolio/static/media/FullStackDeveloperResume.54f91d9efd8ecc6d6a58.pdf",
+    "static/media/run-buddy.jpg": "/Fizzy-React-Portfolio/static/media/run-buddy.75bba0c7624ea16aab72.jpg",
+    "static/media/data-mammoth.jpg": "/Fizzy-React-Portfolio/static/media/data-mammoth.67a744ad9ad67c49cc94.jpg",
+    "static/media/regal-care.jpg": "/Fizzy-React-Portfolio/static/media/regal-care.44fd6db82160475a0535.jpg",
+    "static/media/e-commerce.jpg": "/Fizzy-React-Portfolio/static/media/e-commerce.f4eab2f0b15154d10607.jpg",
+    "static/media/tech-blog.jpg": "/Fizzy-React-Portfolio/static/media/tech-blog.3f4723e80064e0ffa880.jpg",
+    "static/media/note-taker.jpg": "/Fizzy-React-Portfolio/static/media/note-taker.bd8d2a6641385ef0114b.jpg",
+    "static/media/cover-image.jpg": "/Fizzy-React-Portfolio/static/media/cover-image.eb6c33ad1abf3a093260.jpg",
+    "static/media/avatar.jpg": "/Fizzy-React-Portfolio/static/media/avatar.4a2a79fc37173c8c7d2c.jpg",
+    "index.html": "/Fizzy-React-Portfolio/index.html",
+    "main.1202e6e9.css.map": "/Fizzy-React-Portfolio/static/css/main.1202e6e9.css.map",
+    "main.d2eca714.js.map": "/Fizzy-React-Portfolio/static/js/main.d2eca714.js.map",
+    "787.30aec1ab.chunk.js.map": "/Fizzy-React-Portfolio/static/js/787.30aec1ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1202e6e9.css",
+    "static/js/main.d2eca714.js"
+  ]
+}
