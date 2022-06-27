@@ -190,9 +190,13 @@ div .subtitle-md {
 
   .about-title {
     padding-top: 5%;
+    color: black;
+    text-shadow: 2px 2px lightgray;
   }
 
   .about-desc {
+    color: black;
+    text-shadow: 2px 2px lightgray;
     text-align: center;
     font-size: larger;
     margin: 5% auto;
@@ -204,6 +208,45 @@ div .subtitle-md {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
+}
+
+.scroll-text {
+  height: 100%;
+  text-align: center;
+  
+  /* animation properties */
+  -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  
+  -moz-animation: my-animation 7s linear infinite;
+  -webkit-animation: my-animation 7s linear infinite;
+  animation: my-animation 7s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateY(100%); }
+  to { -moz-transform: translateY(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateY(100%); }
+  to { -webkit-transform: translateY(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  to {
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
 }
 
 /* Nav Area */

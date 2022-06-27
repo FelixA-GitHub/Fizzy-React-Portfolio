@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import coverImage from '../../assets/cover/cover-image.jpg';
 import avatar from '../../assets/avatar/avatar.jpg'
 import { capitalizeFirstLetter } from "../../utils/helpers";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -18,36 +19,20 @@ function About() {
 
   const [currentPage] = useState(pages[0]);
 
-  const myStyle={
-    backgroundImage: 
-"url('https://i.pinimg.com/originals/d4/a6/33/d4a63344a6af34bdaa4465a94d516cd0.jpg')",
-    height:'100vh',
-    marginTop:'-70px',
-    fontSize:'50px',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-};
-return (
-  <div style={myStyle}>
-    <h1> geeksforgeeks </h1>
-  </div>
-);
-
-
-  // return (
-  //   <section className="about-example">
+  return (
+    <section className="about-example">
       
-  //       <div className="card border-0">
-  //         <img className="card-img-top" src={coverImage} alt="light bulb"></img>
-  //         <div className="card-img-overlay card-inverse about-content">
-  //           <h1 className="about-title" style={{ fontSize: "40px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
-  //           <img className="avatar-img" src={avatar} alt="avatar"></img>
-  //           <div>            
-  //             <p className="about-desc about-text">{currentPage.description}</p>
-  //           </div>
-  //         </div>
-  //       </div>
-  //   </section>
+        <div className="card border-0">
+          <img className="card-img-top vh-100" src={coverImage} alt="light bulb"></img>
+          <div className="card-img-overlay card-inverse about-content scroll-text">
+            <h1 className="about-title" style={{ fontSize: "40px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
+            <img className="avatar-img" src={avatar} alt="avatar"></img>
+            <div>            
+              <p className="about-desc about-text">{currentPage.description}</p>
+            </div>
+          </div>
+        </div>
+    </section>
   
     // <Container>
     //   <Row>
@@ -55,7 +40,7 @@ return (
     //     <Col></Col>
     //   </Row>
     // </Container>
-  // );
+  );
 }
 
 export default About;
