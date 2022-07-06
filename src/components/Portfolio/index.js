@@ -49,10 +49,10 @@ function Portfolio() {
             repo: 'https://github.com/FelixA-GitHub/Fizz-E-Commerce-Back-End.git'
         },
         {
-            name: 'note-taker',
-            description: 'Express/Node/FS/Heroku',
-            link: 'https://fizzy-note-taker.herokuapp.com/',
-            repo: 'https://github.com/FelixA-GitHub/note-taker-express.git'
+            name: 'grandmas-taxidermy',
+            description: 'MERN/Heroku',
+            link: 'https://infinite-falls-54621.herokuapp.com/',
+            repo: 'https://github.com/FelixA-GitHub/Grandmas-Mismatched-Taxidermy.git'
         }
     ])
 
