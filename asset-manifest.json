@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/Fizzy-React-Portfolio/static/css/main.1202e6e9.css",
-    "main.js": "/Fizzy-React-Portfolio/static/js/main.d2eca714.js",
+    "main.js": "/Fizzy-React-Portfolio/static/js/main.2964836d.js",
     "static/js/787.30aec1ab.chunk.js": "/Fizzy-React-Portfolio/static/js/787.30aec1ab.chunk.js",
+    "static/media/grandmas-taxidermy.jpg": "/Fizzy-React-Portfolio/static/media/grandmas-taxidermy.0275b8ce3233cb4ce26e.jpg",
     "static/media/FullStackDeveloperResume.pdf": "/Fizzy-React-Portfolio/static/media/FullStackDeveloperResume.54f91d9efd8ecc6d6a58.pdf",
     "static/media/run-buddy.jpg": "/Fizzy-React-Portfolio/static/media/run-buddy.75bba0c7624ea16aab72.jpg",
     "static/media/data-mammoth.jpg": "/Fizzy-React-Portfolio/static/media/data-mammoth.67a744ad9ad67c49cc94.jpg",
@@ -14,11 +15,11 @@
     "static/media/avatar.jpg": "/Fizzy-React-Portfolio/static/media/avatar.4a2a79fc37173c8c7d2c.jpg",
     "index.html": "/Fizzy-React-Portfolio/index.html",
     "main.1202e6e9.css.map": "/Fizzy-React-Portfolio/static/css/main.1202e6e9.css.map",
-    "main.d2eca714.js.map": "/Fizzy-React-Portfolio/static/js/main.d2eca714.js.map",
+    "main.2964836d.js.map": "/Fizzy-React-Portfolio/static/js/main.2964836d.js.map",
     "787.30aec1ab.chunk.js.map": "/Fizzy-React-Portfolio/static/js/787.30aec1ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1202e6e9.css",
-    "static/js/main.d2eca714.js"
+    "static/js/main.2964836d.js"
   ]
 }
