@@ -154,7 +154,7 @@ div .subtitle-md {
     padding: 0;
     width: 100%;
     display: block;
-    cursor: pointer;
+    cursor: arrow;
     overflow: hidden;
   }
   .about-content {
