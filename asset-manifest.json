@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/Fizzy-React-Portfolio/static/css/main.1202e6e9.css",
-    "main.js": "/Fizzy-React-Portfolio/static/js/main.2964836d.js",
+    "main.css": "/Fizzy-React-Portfolio/static/css/main.6276022f.css",
+    "main.js": "/Fizzy-React-Portfolio/static/js/main.38e1a046.js",
     "static/js/787.30aec1ab.chunk.js": "/Fizzy-React-Portfolio/static/js/787.30aec1ab.chunk.js",
     "static/media/grandmas-taxidermy.jpg": "/Fizzy-React-Portfolio/static/media/grandmas-taxidermy.0275b8ce3233cb4ce26e.jpg",
-    "static/media/FullStackDeveloperResume.pdf": "/Fizzy-React-Portfolio/static/media/FullStackDeveloperResume.54f91d9efd8ecc6d6a58.pdf",
     "static/media/run-buddy.jpg": "/Fizzy-React-Portfolio/static/media/run-buddy.75bba0c7624ea16aab72.jpg",
     "static/media/data-mammoth.jpg": "/Fizzy-React-Portfolio/static/media/data-mammoth.67a744ad9ad67c49cc94.jpg",
     "static/media/regal-care.jpg": "/Fizzy-React-Portfolio/static/media/regal-care.44fd6db82160475a0535.jpg",
@@ -13,13 +12,14 @@
     "static/media/note-taker.jpg": "/Fizzy-React-Portfolio/static/media/note-taker.bd8d2a6641385ef0114b.jpg",
     "static/media/cover-image.jpg": "/Fizzy-React-Portfolio/static/media/cover-image.eb6c33ad1abf3a093260.jpg",
     "static/media/avatar.jpg": "/Fizzy-React-Portfolio/static/media/avatar.4a2a79fc37173c8c7d2c.jpg",
+    "static/media/FullStackDeveloperResume.pdf": "/Fizzy-React-Portfolio/static/media/FullStackDeveloperResume.4038055cbf9e5f6f34e1.pdf",
     "index.html": "/Fizzy-React-Portfolio/index.html",
-    "main.1202e6e9.css.map": "/Fizzy-React-Portfolio/static/css/main.1202e6e9.css.map",
-    "main.2964836d.js.map": "/Fizzy-React-Portfolio/static/js/main.2964836d.js.map",
+    "main.6276022f.css.map": "/Fizzy-React-Portfolio/static/css/main.6276022f.css.map",
+    "main.38e1a046.js.map": "/Fizzy-React-Portfolio/static/js/main.38e1a046.js.map",
     "787.30aec1ab.chunk.js.map": "/Fizzy-React-Portfolio/static/js/787.30aec1ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1202e6e9.css",
-    "static/js/main.2964836d.js"
+    "static/css/main.6276022f.css",
+    "static/js/main.38e1a046.js"
   ]
 }
