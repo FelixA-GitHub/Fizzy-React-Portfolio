@@ -1,4 +1,12 @@
 # Fizzy-React-Portfolio
+ 
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Mock Up](#mock-up)
+- [GitHub Deployment](#github-deployment)
+- [Questions](#questions)
 
 ## User Story
 ```
@@ -44,6 +52,12 @@
 - JavaScript
 - CSS
 - HTML
+```
+
+## Installation
+```
+- npm i
+- npm run deploy
 ```
 
 ## Mock Up
