@@ -16,28 +16,46 @@ function About() {
 
   const [currentPage] = useState(pages[0]);
 
+  //   return (
+  //     <section className="about-example bg-resume">
+
+  //       <div className="card border-0">
+  //         <div className="">
+
+  //           {/* <img className="card-img-top vh-100" src={coverImage} alt="light bulb"></img> */}
+  //           <div className="card-img-overlay card-inverse about-content scroll-text">
+  //             <h1 className="about-title" style={{ fontSize: "40px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
+  //             <img className="avatar-img" src={avatar} alt="avatar"></img>
+  //             <div>
+  //               <p className="about-desc about-text">{currentPage.description}</p>
+  //             </div>
+  //           </div>
+  //         </div>
+
+  //       </div>
+  //     </section>
+
+  //   );
+  // }
+
   return (
-    <section className="about-example">
-      
-        <div className="card border-0">
-          {/* <img className="card-img-top vh-100" src={coverImage} alt="light bulb"></img> */}
-          <div className="card-img-overlay card-inverse about-content scroll-text">
-            <h1 className="about-title" style={{ fontSize: "40px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
-            <img className="avatar-img" src={avatar} alt="avatar"></img>
-            <div>            
-              <p className="about-desc about-text">{currentPage.description}</p>
-            </div>
+    <section className='bg-resume vh-100'>
+      <div className='container'>
+        <div className='row'>
+          <div className=''>
+            <h1 className="" style={{ fontSize: "46px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
+            <p>
+              {currentPage.description}
+            </p>
+            <hr />
+            
           </div>
+
         </div>
+
+      </div>
     </section>
-  
-    // <Container>
-    //   <Row>
-    //     <Col></Col>
-    //     <Col></Col>
-    //   </Row>
-    // </Container>
   );
-}
+};
 
 export default About;

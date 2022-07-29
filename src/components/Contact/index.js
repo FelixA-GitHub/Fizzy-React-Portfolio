@@ -46,7 +46,7 @@ function Contact() {
   };
 
   return (
-    <section className="bg-contact">
+    <section className="bg-contact vh-100">
 
       <form className="form-horizontal" id="contact-form" onSubmit={handleSubmit}>
         <div>
