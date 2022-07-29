@@ -43,12 +43,14 @@ function About() {
       <div className='container'>
         <div className='row'>
           <div className=''>
-            <h1 className="" style={{ fontSize: "46px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
-            <p>
+            <h1 className="text-center mt-5" style={{ fontSize: "46px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
+            <div className="text-center">
+              <img className="avatar-img" src={avatar} alt="avatar"></img>
+            </div>
+            <hr />
+            <p className="text-center mt-5">
               {currentPage.description}
             </p>
-            <hr />
-            
           </div>
 
         </div>
