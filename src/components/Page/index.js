@@ -5,11 +5,14 @@ import About from "../About";
 import Portfolio from "../Portfolio";
 import Contact from "../Contact";
 import Resume from "../Resume";
+import Home from "../Home";
 
 function Page({ currentPage }) {
 
     const renderPage = () => {
         switch (currentPage.name) {
+            case 'home':
+                return <Home />;
             case 'about':
                 return <About />;
             case 'portfolio':
@@ -19,7 +22,7 @@ function Page({ currentPage }) {
             case 'resume':
                 return <Resume />;
             default:
-                return <About />;
+                return <Home />;
         }
     };
 

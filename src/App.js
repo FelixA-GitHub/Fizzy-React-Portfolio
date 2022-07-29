@@ -11,8 +11,9 @@ import "../node_modules/bootstrap/dist/js/bootstrap.min.js";
 function App() {
   const [pages] = useState([
     {
-      name: 'about'
+      name: 'home'
     },
+    { name: 'about' },
     { name: 'portfolio' },
     { name: 'contact' },
     { name: 'resume' }
