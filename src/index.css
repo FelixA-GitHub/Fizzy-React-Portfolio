@@ -215,6 +215,38 @@ div .subtitle-md {
     background-color: #CAD2C5;
 }
 
+/* Carousel */
+
+span.carousel-control-prev-icon {
+  opacity: 0.6;
+  background: url('https://api.iconify.design/line-md/chevron-left.svg') no-repeat center center / contain;
+}
+
+span.carousel-control-prev-icon:hover {
+  opacity: 1;
+}
+
+span.carousel-control-prev-icon::after {
+  visibility: hidden;
+}
+
+span.carousel-control-next-icon {
+  opacity: 0.6;
+  background: url('https://api.iconify.design/line-md/chevron-right.svg') no-repeat center center / contain;
+}
+
+span.carousel-control-next-icon:hover {
+  opacity: 1;
+}
+
+span.carousel-control-next-icon::after {
+  visibility: hidden;
+}
+
+div.carousel-indicators {
+  visibility: hidden;
+}
+
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
   .scroll-text {

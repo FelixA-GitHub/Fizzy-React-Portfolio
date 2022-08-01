@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import coverImage from '../../assets/cover/cover-image.jpg';
+import coverImage from '../../assets/cover/clouds.jpg';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 import "bootstrap/dist/css/bootstrap.min.css";
 
