@@ -13,11 +13,17 @@ form div, section .resume-section {
     padding: 1% 18%;
 }
 
-/* Contact Area */
-
-.bg-contact {
-    background-color: #354F52;
+.bg-fade {
+  background: url(/Users/fizzy/Sites/Fizzy-React-Portfolio/src/assets/cover/clouds.jpg);
+  background-size: cover;
+  opacity: 0.75;
 }
+
+.no-fade {
+opacity: 1;
+}
+
+/* Contact Area */
 
 .draw-border {
     box-shadow: inset 0 0 0 4px #58afd1;

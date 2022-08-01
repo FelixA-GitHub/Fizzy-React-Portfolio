@@ -11,8 +11,8 @@ function Resume() {
     ]);
     const [currentPage] = useState(pages[0]);
     return (
-        <section className='resume-section bg-resume vh-100'>
-            <div className='container'>
+        <section className='resume-section bg-fade vh-100'>
+            <div className='container no-fade mt-5'>
                 <div className='row'>
                     <div className=''>
                         <h1 className="" style={{ fontSize: "46px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
