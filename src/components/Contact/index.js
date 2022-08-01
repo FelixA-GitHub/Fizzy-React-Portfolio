@@ -46,9 +46,9 @@ function Contact() {
   };
 
   return (
-    <section className="bg-all vh-100">
+    <section className="bg-all vw-100">
 
-      <form className="form-horizontal no-fade" id="contact-form" onSubmit={handleSubmit}>
+      <form className="form-horizontal" id="contact-form" onSubmit={handleSubmit}>
         <div className="">
           <h1 data-testid="h1tag" className="title mt-5" style={{ fontSize: "46px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
           <p>

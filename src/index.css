@@ -16,6 +16,7 @@ form div, section .resume-section {
 .bg-all {
   background: url(/Users/fizzy/Sites/Fizzy-React-Portfolio/src/assets/cover/clouds.jpg);
   background-size: cover;
+  width: 100vw;
 }
 
 .no-fade {
@@ -222,7 +223,7 @@ div .subtitle-md {
 
 /* Carousel */
 
-span.carousel-control-prev-icon {
+/* span.carousel-control-prev-icon {
   opacity: 0.6;
   background: url('https://api.iconify.design/line-md/chevron-left.svg') no-repeat center center / contain;
 }
@@ -250,7 +251,52 @@ span.carousel-control-next-icon::after {
 
 div.carousel-indicators {
   visibility: hidden;
+} */
+
+/* Home Area */
+
+.cf {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
 }
+
+.cf img {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes cf3FadeInOut {
+  0% {
+  opacity: 1;
+}
+10% {
+  opacity: 1;
+}
+20% {
+  opacity: 0;
+}
+100% {
+opacity: 0;
+}
+}
+
+.cf img.top {
+animation-name: cf3FadeInOut;
+animation-timing-function: ease-in;
+animation-iteration-count: infinite;
+animation-duration: 60s;
+animation-direction: alternate;
+}
+
+
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {

@@ -39,16 +39,16 @@ function About() {
   // }
 
   return (
-    <section className='bg-all vh-100'>
-      <div className='container no-fade'>
-        <div className='row no-fade'>
-          <div className='no-fade'>
-            <h1 className="text-center no-fade mt-5" style={{ fontSize: "46px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
-            <div className="text-center no-fade">
+    <section className='bg-all vw-100'>
+      <div className='container '>
+        <div className='row '>
+          <div className=''>
+            <h1 className="text-center  mt-5" style={{ fontSize: "46px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
+            <div className="text-center ">
               <img className="avatar-img mb-3 mt-3" src={avatar} alt="avatar"></img>
             </div>
             <hr />
-            <p className="text-center no-fade mt-5">
+            <p className="text-center  mt-5">
               {currentPage.description}
             </p>
           </div>
