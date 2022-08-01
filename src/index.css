@@ -13,7 +13,7 @@ form div, section .resume-section {
     padding: 1% 18%;
 }
 
-.bg-fade {
+.bg-all {
   background: url(/Users/fizzy/Sites/Fizzy-React-Portfolio/src/assets/cover/clouds.jpg);
   background-size: cover;
 }

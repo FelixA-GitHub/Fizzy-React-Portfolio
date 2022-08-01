@@ -39,7 +39,7 @@ function About() {
   // }
 
   return (
-    <section className='bg-fade vh-100'>
+    <section className='bg-all vh-100'>
       <div className='container no-fade'>
         <div className='row no-fade'>
           <div className='no-fade'>

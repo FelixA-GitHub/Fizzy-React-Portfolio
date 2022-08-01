@@ -46,7 +46,7 @@ function Contact() {
   };
 
   return (
-    <section className="bg-fade vh-100">
+    <section className="bg-all vh-100">
 
       <form className="form-horizontal no-fade" id="contact-form" onSubmit={handleSubmit}>
         <div className="">

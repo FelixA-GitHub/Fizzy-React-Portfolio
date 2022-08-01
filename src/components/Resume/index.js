@@ -11,7 +11,7 @@ function Resume() {
     ]);
     const [currentPage] = useState(pages[0]);
     return (
-        <section className='resume-section bg-fade vh-100'>
+        <section className='resume-section bg-all vh-100'>
             <div className='container no-fade mt-5'>
                 <div className='row'>
                     <div className=''>
