@@ -16,12 +16,13 @@ function Nav(props) {
 
   return (
 
-    <nav className="navbar navbar-expand-lg navbar-light bg-light px-3">
+    <nav className="navbar navbar-expand-lg bg-nav px-3">
 
-        <a className="navbar-brand" href="/">Logo</a>
+        <a className="navbar-brand" href="/"></a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
+        <div className='collapse navbar-collapse'></div>
         <div className="collapse navbar-collapse" id="navbarNav">
           <div className="navbar-nav mr-auto mt-2 mt-lg-0">
             {pages.map((Page) => (

@@ -33,7 +33,7 @@ function Home() {
           <img className='bottom vw-100' src={coverImage} alt="clouds"></img>
           <img className='top vw-100' src={black} alt="black"></img>
         <div className='overlay'>
-          <div className=''>
+          <div className='text-center'>
             <h1 className="text-center mt-5" style={{ fontSize: "46px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
             <p className="text-center mt-5" style={{ fontSize: "23px" }}>
               {currentPage.description}

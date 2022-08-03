@@ -3,7 +3,7 @@ import React from 'react';
 function Header(props) {
 
     return (
-        <header className='sticky-top'>
+        <header className='header sticky-top'>
             {props.children}
         </header>
     );
