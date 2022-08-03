@@ -15,8 +15,8 @@ function Nav(props) {
   }, [currentPage]);
 
   return (
-
-    <nav className="navbar navbar-expand-lg bg-nav px-3">
+    <section className='overlay'>
+      <nav className="navbar navbar-expand-lg bg-nav px-3">
 
         <a className="navbar-brand" href="/"></a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +41,7 @@ function Nav(props) {
 
     </nav>
 
-    // <Navbar bg="light" expand="lg">
+    {/* // <Navbar bg="light" expand="lg">
     //   <Container>
     //     <Navbar.Brand href="#home">Felix Acevedo</Navbar.Brand>
     //     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -59,8 +59,10 @@ function Nav(props) {
     //       </Nav>
     //     </Navbar.Collapse>
     //   </Container>
-    // </Navbar>
+    // </Navbar> */}
+    </section>
   );
+    
 }
 
 export default Nav;
