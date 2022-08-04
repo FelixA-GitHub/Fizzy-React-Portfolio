@@ -7,9 +7,8 @@ import {
 function Footer() {
 
   return (
-    <MDBFooter className='bg-footer text-center text-white'>
-      <div className='container'>
-        <section className='mb-4'>
+    <MDBFooter className='bg-footer text-center text-white' >
+        <section className='m-0' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
           <a
             className='btn btn-primary btn-floating m-1'
             style={{ backgroundColor: '#ac2bac' }}
@@ -36,11 +35,10 @@ function Footer() {
           >
             <MDBIcon fab icon='github' />
           </a>
-        </section>
-        <div className='text-center pb-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+        <div className='text-center pb-3'>
           © 2022 Felix Acevedo
         </div>
-      </div>
+        </section>
 
 
     </MDBFooter>

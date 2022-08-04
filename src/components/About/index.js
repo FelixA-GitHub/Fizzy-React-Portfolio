@@ -39,8 +39,8 @@ function About() {
   // }
 
   return (
-    <section className='bg-all vh-100'>
-      <div className='container'>
+    <section className='bg-all vw-100 vh-100'>
+      <div className='container-fluid'>
         <div className='row '>
           <div className=''>
             <h1 className="text-center mt-5" style={{ fontSize: "46px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
