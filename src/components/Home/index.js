@@ -14,18 +14,18 @@ function Home() {
   const [currentPage] = useState(pages[0]);
 
   return (
-    //   <section className="about-example">
+      // <section className="about-example">
 
-    //       <div className="card border-0">
-    //         <img className="card-img-top vh-100" src={coverImage} alt="clouds"></img>
-    //         <div className="card-img-overlay card-inverse">
-    //           <h1 className="text-center about-title mt-5" style={{ fontSize: "40px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
-    //           <div>            
-    //             <p className="about-desc about-text">{currentPage.description}</p>
-    //           </div>
-    //         </div>
-    //       </div>
-    //   </section>
+      //     <div className="card border-0">
+      //       <img className="card-img-top vh-100" src={coverImage} alt="clouds"></img>
+      //       <div className="card-img-overlay card-inverse">
+      //         <h1 className="text-center about-title mt-5" style={{ fontSize: "40px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
+      //         <div>            
+      //           <p className="about-desc about-text">{currentPage.description}</p>
+      //         </div>
+      //       </div>
+      //     </div>
+      // </section>
 
     <section className='cf vh-100'>
       <div className='container'>
@@ -49,6 +49,17 @@ function Home() {
   );
 
 }
+
+// window.addEventListener("click", ev => {
+    
+//     document.body.innerHTML = "<h1 id='gameOn'>Portfolio!!!</h1>"
+  
+// });
+
+// document.getElementByID("redirectBtn").addEventListener("click", redirectFunction);
+//    function redirectFunction() {
+//       window.location.href("https://google.com/");
+//    }
 
 
 
