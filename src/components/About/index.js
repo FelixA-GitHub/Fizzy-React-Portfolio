@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import avatar from '../../assets/avatar/avatar.jpg';
-import coverImage from '../../assets/cover/clouds.jpg';
 import { capitalizeFirstLetter } from "../../utils/helpers";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -40,17 +39,14 @@ function About() {
   // }
 
   return (
-    <section className='cf vh-100'>
+    <section className='bg-all vh-100'>
       <div className='container'>
-        <div>
-          <img className='cf bottom vw-100' src={coverImage} alt="clouds"></img>
-          {/* <img className='top vw-100' src={black} alt="black"></img> */}
-
-        </div>
-        <div className='cf row '>
+        <div className='row '>
           <div className=''>
-          <img className="avatar-img mb-3 mt-3" src={avatar} alt="avatar"></img>
             <h1 className="text-center mt-5" style={{ fontSize: "46px" }}>{capitalizeFirstLetter(currentPage.name)}</h1>
+            <div className="text-center">
+              <img className="avatar-img mb-3 mt-3" src={avatar} alt="avatar"></img>
+            </div>
             <hr />
             <p className="text-center mt-5">
               {currentPage.description}
