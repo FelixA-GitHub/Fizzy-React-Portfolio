@@ -162,7 +162,7 @@ function Portfolio() {
 
         // </section>
 
-        <section className="p-4 bg-all vw-100">
+        <section className="p-4 bg-all">
             <div>
                 <Container fluid className="p-0">
                     <h1 className="text-center margin-top">{capitalizeFirstLetter(currentPage.name)}</h1>

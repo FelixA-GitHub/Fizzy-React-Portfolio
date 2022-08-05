@@ -21,7 +21,6 @@ function Nav(props) {
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className='collapse navbar-collapse'></div>
         <div className="collapse navbar-collapse" id="navbarNav">
           <div className="navbar-nav mr-auto mt-2 mt-lg-0">
             {pages.map((Page) => (
@@ -39,8 +38,9 @@ function Nav(props) {
         </div>
 
     </nav>
+    </section>
 
-    {/* // <Navbar bg="light" expand="lg">
+    // <Navbar bg="light" expand="lg">
     //   <Container>
     //     <Navbar.Brand href="#home">Felix Acevedo</Navbar.Brand>
     //     <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -58,10 +58,8 @@ function Nav(props) {
     //       </Nav>
     //     </Navbar.Collapse>
     //   </Container>
-    // </Navbar> */}
-    </section>
+    // </Navbar>
   );
-    
 }
 
 export default Nav;

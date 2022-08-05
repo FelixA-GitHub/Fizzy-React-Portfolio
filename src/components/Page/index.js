@@ -36,7 +36,7 @@ function Page({ currentPage }) {
         // <section>
         //     <PageContent>{renderPage()}</PageContent>
         // </section>
-        <Carousel fade activeIndex={index} onSelect={handleSelect}>
+        <Carousel fade activeIndex={index} onSelect={handleSelect} interval={null}>
             <Carousel.Item>
                 <Home />
             </Carousel.Item>

@@ -17,7 +17,7 @@ form div, section .resume-section {
   background: url(/Users/fizzy/Sites/Fizzy-React-Portfolio/src/assets/cover/clouds.jpg);
   background-size: cover;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .no-fade {
