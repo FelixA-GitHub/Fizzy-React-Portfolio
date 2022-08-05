@@ -230,7 +230,7 @@ div .subtitle-md {
 
 /* Carousel */
 
-/* span.carousel-control-prev-icon {
+span.carousel-control-prev-icon {
   opacity: 0.6;
   background: url('https://api.iconify.design/line-md/chevron-left.svg') no-repeat center center / contain;
 }
@@ -258,7 +258,7 @@ span.carousel-control-next-icon::after {
 
 div.carousel-indicators {
   visibility: hidden;
-} */
+}
 
 /* Home Area */
 
