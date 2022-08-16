@@ -15,28 +15,29 @@ function Page({ currentPage }) {
         setIndex(selectedIndex);
     };
 
-    // const renderPage = () => {
-    //     switch (currentPage.name) {
-    //         case 'home':
-    //             return <Home />;
-    //         case 'about':
-    //             return <About />;
-    //         case 'portfolio':
-    //             return <Portfolio />;
-    //         case 'contact':
-    //             return <Contact />;
-    //         case 'resume':
-    //             return <Resume />;
-    //         default:
-    //             return <Home />;
-    //     }
-    // };
+    const renderPage = () => {
+        switch (currentPage.name) {
+            case 'home':
+                return <Home />;
+            case 'about':
+                return <About />;
+            case 'portfolio':
+                return <Portfolio />;
+            case 'contact':
+                return <Contact />;
+            case 'resume':
+                return <Resume />;
+            default:
+                return <Home />;
+        }
+    };
 
     return (
         // <section>
         //     <PageContent>{renderPage()}</PageContent>
         // </section>
         <Carousel fade activeIndex={index} onSelect={handleSelect} interval={null}>
+
             <Carousel.Item>
                 <Home />
             </Carousel.Item>
